@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(to bottom, #001f3f, #000a1a); /* Dark blue to darker blue gradient */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif; 
+    height: 100vh; /* Ensure the body covers the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px; 
+    border: 5px solid #ffffff;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px; /* Adds space between the image and the text */
+}
+
+h1, p {
+    margin: 0;
+}
