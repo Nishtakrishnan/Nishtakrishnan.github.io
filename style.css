@@ -1,29 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: linear-gradient(to bottom, #001f3f, #000a1a); /* Dark blue to darker blue gradient */
-    color: #ffffff; /* White text color */
-    font-family: Arial, sans-serif; 
-    height: 100vh; /* Ensure the body covers the full height of the viewport */
+    background-color: rgba(94, 59, 238, 0.1);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar ul {
+    padding: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar ul li {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.sideblock {
+    background-color: rgba(94, 59, 238, 0.8);
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    top: 230px;
+    right: 100px;
+    border-radius: 30px;
+}
+
+.bottom-aligned-image {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    overflow-y: auto;
+    height: 100vh;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px; 
-    border: 5px solid #ffffff;
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-bottom: 20px; /* Adds space between the image and the text */
-}
-
-h1, p {
-    margin: 0;
+.page {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overflow-y: auto;
 }
