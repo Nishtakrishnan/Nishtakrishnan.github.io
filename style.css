@@ -61,6 +61,26 @@ body {
     transform: translateX(-50%);
 }
 
+.icon {
+    width: 40px;
+    height: 40px; 
+    position: absolute;
+    top: 550px; 
+}
+
+.mail-icon {
+    left: 200px; 
+}
+
+.github-icon {
+    left: 300px;
+}
+
+.linkedin-icon {
+    left: 400px; 
+}
+
+
 .about {
     margin-top: 80px;
     display: flex;
