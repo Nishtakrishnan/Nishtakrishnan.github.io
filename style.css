@@ -95,3 +95,78 @@ body {
     scroll-snap-stop: always;
     overflow-y: auto;
 }
+
+.scroll-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(94, 59, 238, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 20px; /* Position 20px from the bottom of the homepage */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-button:hover {
+    background-color: rgba(94, 59, 238, 1); /* Darker color on hover */
+}
+
+
+/* for phones */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 50px;
+        padding: 5px;
+    }
+    
+    .sideblock {
+        width: 90%;
+        height: auto;
+        position: static;
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+    }
+
+    .bottom-aligned-image {
+        width: 90%;
+        height: auto;
+        position: static;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px; 
+        position: static;
+        margin-top: 20px; 
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .mail-icon {
+        left: auto; 
+    }
+
+    .github-icon {
+        left: auto;
+    }
+
+    .linkedin-icon {
+        left: auto; 
+    }
+
+    .about {
+        margin-top: 50px;
+    }
+
+    .scroll-button {
+        bottom: 10px;
+    }
+}
