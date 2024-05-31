@@ -63,24 +63,20 @@ body {
     transform: translateX(-50%);
 }
 
-.icon {
-    width: 2.5vw;
-    height: auto; 
-    position: absolute;
-    top: 70vh; 
-    display: flex;
-}
+/* .icon {
+    position: absolute; 
+} */
 
 .mail-icon {
-    left: 7vw; 
+    position: absolute;
 }
 
 .github-icon {
-    left: 13vw;
+    position: absolute;
 }
 
 .linkedin-icon {
-    left: 19vw; 
+    position: absolute;
 }
 
 .about {

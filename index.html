@@ -24,19 +24,20 @@
         <div class="sideblock">
             <img src="images/nishphoto21.png" class="bottom-aligned-image">
         </div>
-        <a href="mailto:nishtakrishnan2002@gmail.com">
-            <img src="images/image2.png" class="icon mail-icon">
-        </a>
-        <a href="https://github.com/Nishtakrishnan" target="_blank">
-            <img src="images/image3.png" class="icon github-icon">
-        </a>
-        <a href="https://www.linkedin.com/in/nishta-krishnan-496b44229/" target="_blank">
-            <img src="images/image1.png" class="icon linkedin-icon">
-        </a>
+        <div class="icon">
+            <a href="mailto:nishtakrishnan2002@gmail.com">
+                <img src="images/image2.png" class="mail-icon">
+            </a>
+            <a href="https://github.com/Nishtakrishnan" target="_blank">
+                <img src="images/image3.png" class="github-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/nishta-krishnan-496b44229/" target="_blank">
+                <img src="images/image1.png" class="linkedin-icon">
+            </a>
+        </div>  
         <div class="scroll-button-container">
             <a href="#about" class="scroll-button">Learn More About Me</a>
         </div>
-        
     </div>
     <div id="about" class="page">
         <div class="about">
@@ -44,6 +45,16 @@
         </div>
     </div>
     <!-- More pages here-->
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            updateDimensions(); // Call the function initially after the DOM has fully loaded
+        });
+
+        window.addEventListener("resize", function() {
+            updateDimensions(); // Call the function whenever the window is resized
+        });
+    </script>
 </body>
 </html>
 
