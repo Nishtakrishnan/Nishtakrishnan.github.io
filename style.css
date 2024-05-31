@@ -12,30 +12,32 @@ body {
 
 .navbar {
     background-color: white;
-    padding: 10px;
-    height: 70px;
+    padding: 1rem; /* Using rem for padding */
+    height: 10vh; /* Using viewport height for height */
     display: flex;
     align-items: center;
-    top: 0px;
+    top: 0;
     width: 100%;
     position: fixed;
     z-index: 1000;
 }
 
 .navbar ul {
-    padding: 100px;
+    padding: 6vw;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
+    width: 100%;
 }
 
 .navbar ul li {
-    margin: 0 5px;
+    margin: 0 0.5rem;
     display: inline-block;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 .navbar ul li a:hover {
@@ -44,17 +46,17 @@ body {
 
 .sideblock {
     background-color: rgba(94, 59, 238, 0.8);
-    width: 550px;
-    height: 350px;
+    width: 38vw;
+    height: 24vw;
     position: absolute;
-    top: 230px;
-    right: 100px;
-    border-radius: 30px;
+    top: 30vh;
+    right: 6vw;
+    border-radius: 2rem;
 }
 
 .bottom-aligned-image {
-    width: 500px;
-    height: 400px;
+    width: 34vw;
+    height: auto;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -62,24 +64,24 @@ body {
 }
 
 .icon {
-    width: 40px;
-    height: 40px; 
+    width: 2.5vw;
+    height: auto; 
     position: absolute;
-    top: 550px; 
+    top: 70vh; 
+    display: flex;
 }
 
 .mail-icon {
-    left: 200px; 
+    left: 7vw; 
 }
 
 .github-icon {
-    left: 300px;
+    left: 13vw;
 }
 
 .linkedin-icon {
-    left: 400px; 
+    left: 19vw; 
 }
-
 
 .about {
     margin-top: 80px;
@@ -112,61 +114,4 @@ body {
 
 .scroll-button:hover {
     background-color: rgba(94, 59, 238, 1); /* Darker color on hover */
-}
-
-
-/* for phones */
-@media screen and (max-width: 768px) {
-    .navbar {
-        height: 50px;
-        padding: 5px;
-    }
-    
-    .sideblock {
-        width: 90%;
-        height: auto;
-        position: static;
-        margin-top: 100px;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 10px;
-    }
-
-    .bottom-aligned-image {
-        width: 90%;
-        height: auto;
-        position: static;
-        margin-top: 20px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .icon {
-        width: 30px;
-        height: 30px; 
-        position: static;
-        margin-top: 20px; 
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .mail-icon {
-        left: auto; 
-    }
-
-    .github-icon {
-        left: auto;
-    }
-
-    .linkedin-icon {
-        left: auto; 
-    }
-
-    .about {
-        margin-top: 50px;
-    }
-
-    .scroll-button {
-        bottom: 10px;
-    }
 }
