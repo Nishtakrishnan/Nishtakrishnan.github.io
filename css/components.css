@@ -1,0 +1,56 @@
+.sideblock {
+    background-color: rgba(94, 59, 238, 0.8);
+    width: 38vw;
+    height: 24vw;
+    position: absolute;
+    top: 30vh;
+    right: 6vw;
+    border-radius: 2rem;
+}
+
+.bottom-aligned-image {
+    width: 34vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mail-icon,
+.github-icon,
+.linkedin-icon {
+    position: absolute;
+}
+
+.scroll-button {
+    display: inline-block;
+    padding: 2vh 4.8vw; 
+    background-color: rgba(128, 128, 128, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5vh; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; 
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease; 
+}
+
+.scroll-button:hover {
+    background-color: rgba(128, 128, 128, 0.7); 
+}
+
+.scroll-button:hover {
+    background-color: rgb(131, 109, 221); 
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    height: 100vh; /* Full viewport height */
+    padding-top: 15vh; /* Adjust the value as needed */
+}

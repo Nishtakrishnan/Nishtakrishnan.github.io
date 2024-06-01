@@ -1,0 +1,44 @@
+.navbar {
+    background-color: white;
+    padding: 1rem; /* Using rem for padding */
+    height: 10vh; /* Using viewport height for height */
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar ul {
+    padding: 6vw;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    width: 100%;
+}
+
+.navbar ul li {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar ul li a.active {
+    color: #5E3BEE ; 
+}
+
+.page {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overflow-y: auto;
+}

@@ -1,0 +1,48 @@
+@media (max-width: 480px) {
+
+    .navbar ul {
+        text-align: center;
+        list-style: none;
+        display: flex; /* Use flexbox to arrange items in a single line */
+        white-space: nowrap;
+    }
+
+    .navbar ul li {
+        margin: 1vh 0;
+        text-align: center; 
+    }
+
+    .navbar ul li a {
+        padding: 2vh 2vw; 
+        font-size: 3vw; 
+    }
+
+    .scroll-button {
+        bottom: 2vh; 
+        left: 50%;
+        transform: translateX(-50%);
+        transition: background-color 0.3s ease; 
+    }
+
+    .page {
+        height: 100vh;
+    }
+
+    .sideblock {
+        position: absolute; 
+        width: 70vw; 
+        height: 20vh; 
+        top: 22vh;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .bottom-aligned-image {
+        width: 60vw;
+        height: auto;
+    }
+
+    .scroll-button {
+        display: none;
+    }
+}
