@@ -70,11 +70,11 @@ body {
 }
 
 .about {
-    margin-top: 80px;
     display: flex;
     justify-content: center;
     overflow-y: auto;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
+    padding-top: 15vh; /* Adjust the value as needed */
 }
 
 .page {
@@ -86,15 +86,15 @@ body {
 
 .scroll-button {
     display: inline-block;
-    padding: 12px 24px; 
+    padding: 2vh 4.8vw; 
     background-color: rgba(128, 128, 128, 0.5);
     color: white;
     text-decoration: none;
-    border-radius: 50px; 
+    border-radius: 5vh; 
     font-family: 'Roboto', sans-serif;
     font-weight: bold; 
     position: absolute;
-    bottom: 20px; 
+    bottom: 2vh;
     left: 50%;
     transform: translateX(-50%);
     transition: background-color 0.3s ease; 
@@ -132,13 +132,14 @@ body {
     }
 
     .scroll-button {
-        padding: 8px 16px;
-        bottom: 10px;
-        font-size: 12px;
+        bottom: 2vh; /* Adjusted bottom using vh */
+        left: 50%;
+        transform: translateX(-50%);
+        transition: background-color 0.3s ease; 
     }
 
     .page {
-        height: auto;
+        height: 100vh;
     }
 
     .sideblock {
