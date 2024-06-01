@@ -9,15 +9,15 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="#homepage">Home</a></li>
+            <li><a href="#homepage" id="home-link">Home</a></li>
             <li>|</li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about" id="about-link">About</a></li>
             <li>|</li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience" id="experience-link">Experience</a></li>
             <li>|</li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects" id="projects-link">Projects</a></li>
             <li>|</li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
         </ul>
     </div>
     <div id="homepage" class="page">
@@ -46,15 +46,6 @@
     </div>
     <!-- More pages here-->
     <script src="script.js"></script>
-    <script>
-        window.addEventListener("load", function() {
-            updateDimensions(); // Call the function initially after the DOM has fully loaded
-        });
-
-        window.addEventListener("resize", function() {
-            updateDimensions(); // Call the function whenever the window is resized
-        });
-    </script>
 </body>
 </html>
 
