@@ -53,4 +53,7 @@
     overflow-y: auto;
     height: 100vh; /* Full viewport height */
     padding-top: 15vh; /* Adjust the value as needed */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }

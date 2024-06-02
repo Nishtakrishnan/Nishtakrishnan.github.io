@@ -45,8 +45,13 @@ function updateStylesForPhone() {
     }
 }
 
-window.addEventListener("load", updateStylesForPhone);
-window.addEventListener("resize", updateStylesForPhone);
+if (!localStorage.getItem('stylesUpdatedForPhone')) {
+    window.addEventListener("load", function() {
+        updateStylesForPhone();
+        // Set a flag in local storage to indicate the function has run
+        localStorage.setItem('stylesUpdatedForPhone', 'true');
+    });
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     // Function to set the active link
