@@ -23,24 +23,24 @@ window.addEventListener("load", updateDimensions);
 window.addEventListener("resize", updateDimensions);
 
 function updateStylesForPhone() {
-    if (window.matchMedia("(max-width: 480px)").matches) {
+    if (window.innerHeight > window.innerWidth) {
         var mailIcon = document.querySelector(".mail-icon");
         var gitIcon = document.querySelector(".github-icon");
         var linkedinIcon = document.querySelector(".linkedin-icon");
         var sideblock = document.querySelector(".sideblock");
         var sideblockTop = sideblock.offsetTop;
 
-        mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
-        mailIcon.style.left = 22 + "vw"
-        mailIcon.style.width = 12 + "vw"
+        mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 22) + "px";
+        mailIcon.style.left = 30 + "vw"
+        mailIcon.style.width = 8 + "vw"
 
-        gitIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
-        gitIcon.style.left = 42 + "vw"
-        gitIcon.style.width = 12 + "vw"
+        gitIcon.style.top = (sideblockTop + sideblock.offsetHeight + 22) + "px";
+        gitIcon.style.left = 46 + "vw"
+        gitIcon.style.width = 8 + "vw"
 
-        linkedinIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
+        linkedinIcon.style.top = (sideblockTop + sideblock.offsetHeight + 22) + "px";
         linkedinIcon.style.left = 62 + "vw"
-        linkedinIcon.style.width = 12 + "vw"
+        linkedinIcon.style.width = 8 + "vw"
 
     }
 }
