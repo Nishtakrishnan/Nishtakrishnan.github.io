@@ -4,17 +4,17 @@ function updateDimensions() {
     var gitIcon = document.querySelector(".github-icon");
     var linkIcon = document.querySelector(".linkedin-icon");
 
-    var sideblockBottom = sideblock.getBoundingClientRect().bottom;
+    var sideblockTop = sideblock.offsetTop;
 
-    mailIcon.style.top = (sideblockBottom-20) + "px";
+    mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
     mailIcon.style.left = 10 + "vw"
     mailIcon.style.width = 3 + "vw"
 
-    gitIcon.style.top = (sideblockBottom-20) + "px";
+    gitIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
     gitIcon.style.left = 16 + "vw"
     gitIcon.style.width = 3 + "vw"
 
-    linkIcon.style.top = (sideblockBottom-20) + "px";
+    linkIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
     linkIcon.style.left = 22 + "vw"
     linkIcon.style.width = 3 + "vw"
 }
@@ -28,30 +28,25 @@ function updateStylesForPhone() {
         var gitIcon = document.querySelector(".github-icon");
         var linkedinIcon = document.querySelector(".linkedin-icon");
         var sideblock = document.querySelector(".sideblock");
-        var sideblockBottom = sideblock.getBoundingClientRect().bottom;
+        var sideblockTop = sideblock.offsetTop;
 
-        mailIcon.style.top = (sideblockBottom+20) + "px";
+        mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
         mailIcon.style.left = 22 + "vw"
         mailIcon.style.width = 12 + "vw"
 
-        gitIcon.style.top = (sideblockBottom+20) + "px";
+        gitIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
         gitIcon.style.left = 42 + "vw"
         gitIcon.style.width = 12 + "vw"
 
-        linkedinIcon.style.top = (sideblockBottom+20) + "px";
+        linkedinIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
         linkedinIcon.style.left = 62 + "vw"
         linkedinIcon.style.width = 12 + "vw"
 
     }
 }
 
-if (!localStorage.getItem('stylesUpdatedForPhone')) {
-    window.addEventListener("load", function() {
-        updateStylesForPhone();
-        // Set a flag in local storage to indicate the function has run
-        localStorage.setItem('stylesUpdatedForPhone', 'true');
-    });
-}
+window.addEventListener("load", updateStylesForPhone);
+window.addEventListener("resize", updateStylesForPhone);
 
 document.addEventListener('DOMContentLoaded', function() {
     // Function to set the active link
