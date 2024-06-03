@@ -1,7 +1,6 @@
 @media (orientation: portrait)  {
 
     .navbar ul {
-        text-align: center;
         list-style: none;
         display: flex; /* Use flexbox to arrange items in a single line */
         white-space: nowrap;
@@ -54,9 +53,5 @@
         height: 30vh; 
         top: 39vh;
     }
-
-    
-
-
 
 }

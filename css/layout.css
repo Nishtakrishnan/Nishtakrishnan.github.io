@@ -1,31 +1,33 @@
 .navbar {
     background-color: white;
-    padding: 1rem; /* Using rem for padding */
     height: 10vh; /* Using viewport height for height */
     display: flex;
     align-items: center;
+    justify-content: center; /* Center content horizontally */
     top: 0;
     width: 100%;
-    position: fixed;
     z-index: 1000;
+    position: fixed;
 }
 
 .navbar ul {
-    padding: 6vw;
+    padding: 0; /* Remove padding for better centering */
     font-family: 'Roboto', sans-serif;
     list-style: none;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the list items horizontally */
     width: 100%;
 }
 
 .navbar ul li {
-    margin: 0 1rem;
+    margin: 0 2rem;
     display: inline-block;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: black;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .navbar ul li a:hover {
