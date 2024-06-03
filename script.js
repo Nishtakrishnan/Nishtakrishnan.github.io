@@ -6,15 +6,15 @@ function updateDimensions() {
 
     var sideblockTop = sideblock.offsetTop;
 
-    mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
+    mailIcon.style.top = (sideblockTop + sideblock.offsetHeight-3) + "px";
     mailIcon.style.left = 10 + "vw"
     mailIcon.style.width = 3 + "vw"
 
-    gitIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
+    gitIcon.style.top = (sideblockTop + sideblock.offsetHeight -3) + "px";
     gitIcon.style.left = 16 + "vw"
     gitIcon.style.width = 3 + "vw"
 
-    linkIcon.style.top = (sideblockTop + sideblock.offsetHeight + 20) + "px";
+    linkIcon.style.top = (sideblockTop + sideblock.offsetHeight -3) + "px";
     linkIcon.style.left = 22 + "vw"
     linkIcon.style.width = 3 + "vw"
 }
