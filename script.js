@@ -3,6 +3,7 @@ function updateDimensions() {
     var mailIcon = document.querySelector(".mail-icon");
     var gitIcon = document.querySelector(".github-icon");
     var linkIcon = document.querySelector(".linkedin-icon");
+    var aboutMe = document.querySelector(".scroll-button")
 
     var sideblockTop = sideblock.offsetTop;
 
@@ -17,6 +18,8 @@ function updateDimensions() {
     linkIcon.style.top = (sideblockTop + sideblock.offsetHeight -3) + "px";
     linkIcon.style.left = 22 + "vw"
     linkIcon.style.width = 3 + "vw"
+
+    aboutMe.style.top = (sideblockTop + sideblock.offsetHeight+110) + "px";
 }
 
 window.addEventListener("load", updateDimensions);
@@ -47,25 +50,3 @@ function updateStylesForPhone() {
 
 window.addEventListener("load", updateStylesForPhone);
 window.addEventListener("resize", updateStylesForPhone);
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Function to set the active link
-    function setActiveLink() {
-        var sections = document.querySelectorAll('.page');
-        var links = document.querySelectorAll('.navbar ul li a');
-        
-        sections.forEach(function(section) {
-            var rect = section.getBoundingClientRect();
-            if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-                links.forEach(function(link) {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === '#' + section.id) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-        });
-    }
-    setActiveLink();
-    window.addEventListener('scroll', setActiveLink);
-});
