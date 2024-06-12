@@ -78,11 +78,12 @@ window.addEventListener('scroll', function() {
         var top = section.offsetTop;
         var bottom = top + section.offsetHeight;
         var link = document.querySelector('a[href="#' + section.id + '"]');
-        if (scrollPos >= top && scrollPos < bottom) {
+
+        // Adjusted condition to add a buffer of 1 pixel
+        if (scrollPos >= top - 1 && scrollPos < bottom - 1) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
         }
     });
 });
-
