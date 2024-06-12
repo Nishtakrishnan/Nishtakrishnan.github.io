@@ -50,3 +50,30 @@ function updateStylesForPhone() {
 
 window.addEventListener("load", updateStylesForPhone);
 window.addEventListener("resize", updateStylesForPhone);
+
+function updateDimensionsPages() {
+    var scrollButton = document.querySelector(".scroll-button-container");
+    var aboutSection = document.getElementById("about");
+    var scrollButtonBottom = scrollButton.offsetTop + scrollButton.offsetHeight;
+    aboutSection.style.top = (scrollButtonBottom+100) + "px";
+}
+
+window.addEventListener("load", updateDimensionsPages);
+window.addEventListener("resize", updateDimensionsPages);
+
+
+window.addEventListener('scroll', function() {
+    var scrollPos = window.scrollY;
+    var sections = document.querySelectorAll('.page');
+    sections.forEach(function(section) {
+        var top = section.offsetTop;
+        var bottom = top + section.offsetHeight;
+        var link = document.querySelector('a[href="#' + section.id + '"]');
+        if (scrollPos >= top && scrollPos < bottom) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+

@@ -37,3 +37,10 @@
 .navbar ul li a.active {
     color: #5E3BEE ; 
 }
+
+.page {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overflow-y: auto;
+}
