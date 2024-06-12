@@ -44,6 +44,19 @@
     .scroll-button {
         display: none;
     }
+    .left-text {
+        position: absolute;
+        top: calc(20vh);
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        left: 40%;
+        font-size: 7vw;
+        max-width: 100%;
+    }
+    .left-text-2 {
+        font-size: 3vw; /* Adjust font size accordingly */
+    }
 }
 
 @media (orientation: portrait) and (min-width: 500px)  {
@@ -52,6 +65,17 @@
         width: 77vw; 
         height: 30vh; 
         top: 39vh;
+    }
+
+    .left-text {
+        position: absolute;
+        top: calc(35vh);
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        left: 40%;
+        font-size: 7vw;
+        max-width: 100%;
     }
 
 }

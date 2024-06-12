@@ -30,7 +30,7 @@ function updateStylesForPhone() {
         var mailIcon = document.querySelector(".mail-icon");
         var gitIcon = document.querySelector(".github-icon");
         var linkedinIcon = document.querySelector(".linkedin-icon");
-        var sideblock = document.querySelector(".sideblock");
+        var sideblock = document.querySelector(".left-text");
         var sideblockTop = sideblock.offsetTop;
 
         mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 22) + "px";
@@ -52,10 +52,19 @@ window.addEventListener("load", updateStylesForPhone);
 window.addEventListener("resize", updateStylesForPhone);
 
 function updateDimensionsPages() {
-    var scrollButton = document.querySelector(".scroll-button-container");
-    var aboutSection = document.getElementById("about");
-    var scrollButtonBottom = scrollButton.offsetTop + scrollButton.offsetHeight;
-    aboutSection.style.top = (scrollButtonBottom+100) + "px";
+    if (window.innerHeight > window.innerWidth) {
+        var scrollButton = document.querySelector(".mail-icon");
+        var aboutSection = document.getElementById("about");
+        var scrollButtonBottom = scrollButton.offsetTop + scrollButton.offsetHeight;
+        aboutSection.style.top = (scrollButtonBottom+100) + "px";
+    }
+    else {
+        var scrollButton = document.querySelector(".scroll-button-container");
+        var aboutSection = document.getElementById("about");
+        var scrollButtonBottom = scrollButton.offsetTop + scrollButton.offsetHeight;
+        aboutSection.style.top = (scrollButtonBottom+100) + "px";
+
+    }
 }
 
 window.addEventListener("load", updateDimensionsPages);
