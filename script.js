@@ -59,10 +59,10 @@ function updateDimensionsPages() {
         aboutSection.style.top = (scrollButtonBottom+100) + "px";
     }
     else {
-        var scrollButton = document.querySelector(".scroll-button-container");
+        var scrollButton = document.querySelector(".mail-icon");
         var aboutSection = document.getElementById("about");
         var scrollButtonBottom = scrollButton.offsetTop + scrollButton.offsetHeight;
-        aboutSection.style.top = (scrollButtonBottom+100) + "px";
+        aboutSection.style.top = (scrollButtonBottom+150) + "px";
 
     }
 }
@@ -74,13 +74,16 @@ window.addEventListener("resize", updateDimensionsPages);
 window.addEventListener('scroll', function() {
     var scrollPos = window.scrollY;
     var sections = document.querySelectorAll('.page');
+    var viewportHeight = window.innerHeight;
+
     sections.forEach(function(section) {
         var top = section.offsetTop;
         var bottom = top + section.offsetHeight;
+        var middle = (top + bottom) / 2;
         var link = document.querySelector('a[href="#' + section.id + '"]');
 
-        // Adjusted condition to add a buffer of 1 pixel
-        if (scrollPos >= top - 1 && scrollPos < bottom - 1) {
+        // Check if the middle of the section is within the viewport
+        if (scrollPos < bottom - viewportHeight / 2 && scrollPos + viewportHeight / 2 > top) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
