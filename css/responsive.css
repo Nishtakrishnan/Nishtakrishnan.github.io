@@ -16,15 +16,8 @@
         font-size: 3vw; 
     }
 
-    .scroll-button {
-        bottom: 2vh; 
-        left: 50%;
-        transform: translateX(-50%);
-        transition: background-color 0.3s ease; 
-    }
-
     .page {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .sideblock {
@@ -56,6 +49,21 @@
     }
     .left-text-2 {
         font-size: 3vw; /* Adjust font size accordingly */
+    }
+
+    .expertise-container {
+    flex-direction: column; 
+    }   
+
+    .square {
+        width: 50vw;
+        height: 50vw;
+        font-size: calc(1.5vw + 1.5vh);
+    }
+
+    .icon {
+        width: 10vw;
+        height: auto;
     }
 }
 

@@ -12,6 +12,6 @@ body {
     background-color: rgba(94, 59, 238, 0.1);
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow:auto;
-    overflow-y:auto;
+    overflow-y:hidden;
+    overflow: auto;
 }
