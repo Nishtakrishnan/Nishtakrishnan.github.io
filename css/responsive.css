@@ -1,8 +1,9 @@
+/* Phones */
 @media (orientation: portrait)  {
 
     .navbar ul {
         list-style: none;
-        display: flex; /* Use flexbox to arrange items in a single line */
+        display: flex; 
         white-space: nowrap;
     }
 
@@ -20,7 +21,7 @@
         min-height: 100vh;
     }
 
-    .sideblock {
+    .purple-sideblock {
         position: absolute; 
         width: 79vw; 
         height: 22vh; 
@@ -48,7 +49,11 @@
         max-width: 100%;
     }
     .left-text-2 {
-        font-size: 3vw; /* Adjust font size accordingly */
+        font-size: 3vw;
+    }
+
+    .my-expertise-title  {
+        font-size: 5vw;
     }
 
     .expertise-container {
@@ -56,8 +61,8 @@
     }   
 
     .square {
-        width: 50vw;
-        height: 50vw;
+        width: 70vw;
+        height: 70vw;
         font-size: calc(1.5vw + 1.5vh);
     }
 
@@ -67,8 +72,9 @@
     }
 }
 
+/* Ipads in portrait */
 @media (orientation: portrait) and (min-width: 500px)  {
-    .sideblock {
+    .purple-sideblock {
         position: absolute; 
         width: 77vw; 
         height: 30vh; 
@@ -85,5 +91,4 @@
         font-size: 7vw;
         max-width: 100%;
     }
-
 }

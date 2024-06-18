@@ -1,4 +1,5 @@
 @import url('base.css');
 @import url('layout.css');
-@import url('components.css');
+@import url('components/homeComponents.css');
+@import url('components/aboutComponents.css');
 @import url('responsive.css');

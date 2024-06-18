@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar">
         <ul>
             <li><a href="#homepage" id="home-link">Home</a></li>
@@ -16,64 +17,64 @@
             <li><a href="#contact" id="contact-link">Contact</a></li>
         </ul>
     </div>
+
+    <!-- Home Page Section -->
     <div id="homepage" class="page">
-        <div class="sideblock">
-            <img src="images/nishphoto21.png" class="bottom-aligned-image">
+        <div class="purple-sideblock">
+            <img src="images/homepage/nishphoto21.png" class="bottom-aligned-image" alt="Nishta Krishnan">
         </div>
         <div class="left-text">
-            <h2>Hi,<br>
-            I'm 
-            Nishta Krishnan</h2>
+            <h2>Hi,<br>I'm Nishta Krishnan</h2>
             <div class="left-text-2">
                 <h2>Software Engineer & Data Analyst</h2>
             </div>
         </div>
         <div class="icon">
             <a href="mailto:nishtakrishnan2002@gmail.com">
-                <img src="images/image2.png" class="mail-icon">
+                <img src="images/homepage/mailIcon.png" class="mail-icon" alt="Email">
             </a>
             <a href="https://github.com/Nishtakrishnan" target="_blank">
-                <img src="images/image3.png" class="github-icon">
+                <img src="images/homepage/githubIcon.png" class="github-icon" alt="GitHub">
             </a>
             <a href="https://www.linkedin.com/in/nishta-krishnan-496b44229/" target="_blank">
-                <img src="images/image1.png" class="linkedin-icon">
+                <img src="images/homepage/linkedinIcon.png" class="linkedin-icon" alt="LinkedIn">
             </a>
-        </div>  
-        <!-- <div class="scroll-button-container">
-            <a href="#about" class="scroll-button">Learn More About Me</a>
-        </div> -->
+        </div>
     </div>
+
+    <!-- About Page Section -->
     <div class="page" id="about">
         <p class="about-paragraph">
             Paragraph about me
         </p>
         <div class="my-expertise-title">
-            <h2>
-                My Expertise
-            </h2>
+            <h2>My Expertise</h2>
         </div>
         <div class="expertise-container">
             <div class="square square-1">
                 <h2>
-                    <img src="frontend_icon.png" class="icon">
+                    <img src="images/aboutpage/frontendIcon.png" class="icon" alt="Frontend Dev">
                     Frontend Dev
                 </h2>
             </div>
             <div class="square square-2">
                 <h2>
-                    <img src="data_analysis_icon.png" class="icon">
+                    <img src="images/aboutpage/dataAnalysisIcon.png" class="icon" alt="Data Analysis">
                     Data Analysis
                 </h2>
             </div>
             <div class="square square-3">
                 <h2>
-                    <img src="backend_icon.png" class="icon">
+                    <img src="images/aboutpage/backendIcon.png" class="icon" alt="Backend Dev">
                     Backend Dev
                 </h2>
             </div>
         </div>
-
     </div>
-    <script src="script.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/homepageIcons.js"></script>
+    <script src="js/pageDimensions.js"></script>
+    <script src="js/scrollListener.js"></script>
 </body>
 </html>

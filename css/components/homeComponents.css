@@ -1,4 +1,5 @@
-.sideblock {
+/* Homepage Components */
+.purple-sideblock {
     background-color: rgba(94, 59, 238, 0.8);
     width: 37vw;
     height: 21vw;
@@ -28,7 +29,6 @@
     margin-top: 38vh;
     max-width: 38vw;
     font-size: 2.5vw;
-    line-height: 1.2;
     font-family: 'Almarai', sans-serif;
     color: rgba(0, 0, 0, 0.7);
     font-weight: bold;
@@ -37,16 +37,13 @@
 
 .left-text-2 {
     font-size: 1vw;
-    line-height: 1.2;
     color: rgba(0, 0, 0, 0.7);
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     margin-top: 10px;
 }
 
-.scroll-button:focus-visible{
-    outline-offset: 1px;
-}
+/* About page Components */
 
 #about {
     position: absolute;
@@ -56,8 +53,8 @@
 
 .about-paragraph {
     font-family: 'Public Sans', sans-serif;
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    text-align: center; /* Optional: Center the text */
+    box-sizing: border-box;
+    text-align: center; 
     color: #bdbcbc;
     margin: 0px 130px 5vw;
     font-size: 20px;
@@ -65,8 +62,8 @@
 }
 
 .my-expertise-title {
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    text-align: center; /* Optional: Center the text */
+    box-sizing: border-box; 
+    text-align: center; 
     color: #ffffff;
     margin: 170px 6vw 0;
     font-size: 20px;
@@ -78,17 +75,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 3vw 5vh; /* Adjust the spacing as needed */
-    gap: 30px; /* 3px gap between squares */
+    margin: 20px 3vw 5vh;
+    gap: 30px; 
 }
 
 .square {
     width: 25vw;
-    height: 25vw; /* Keep height same as width to make it a square */
+    height: 25vw;
     border-radius: 35px;
     display: flex;
     flex-direction: column;
-    padding-right: 3vw; /* Add padding to the right */
+    padding-right: 3vw;
     font-size: calc(0.8vw + 0.8vh);
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
@@ -97,13 +94,13 @@
 
 .square h2 {
     display: flex;
-    align-items: center; /* Center text and icon vertically */
-    gap: 1vw; /* Adjust gap between text and icon */
+    align-items: center;
+    gap: 1vw; 
 }
 
 .icon {
-    width: 5vw; /* Adjust icon size relative to text */
-    height: auto; /* Maintain aspect ratio */
+    width: 5vw; 
+    height: auto;
 }
 
 /* Background colors for squares */
@@ -112,10 +109,10 @@
 }
 
 .square-2 {
-    background-color: rgba(94, 59, 238, 0.8); /* Example color, adjust as needed */
+    background-color: rgba(94, 59, 238, 0.8);
 }
 
 .square-3 {
-    background-color: rgba(94, 59, 238, 0.4); /* Example color, adjust as needed */
+    background-color: rgba(94, 59, 238, 0.4);
 }
 

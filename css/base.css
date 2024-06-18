@@ -10,8 +10,8 @@ html {
 
 body {
     background-color: rgba(94, 59, 238, 0.1);
-    margin: 0;
     font-family: Arial, sans-serif;
-    overflow-y:hidden;
     overflow: auto;
+    /* to make sure other pages can be different colors across the full width of the screen */
+    margin: 0; 
 }
