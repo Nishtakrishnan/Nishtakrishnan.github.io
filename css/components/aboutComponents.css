@@ -3,7 +3,7 @@
 #about {
     position: absolute;
     background-color: #1F1F1F;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .about-paragraph {
@@ -71,3 +71,69 @@
     background-color: rgba(94, 59, 238, 0.4);
 }
 
+.timeline {
+    margin: 150px auto;
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: "Fira Sans", sans-serif;
+    color: #ffffff;
+  }
+
+  .timeline-component {
+    margin: 0 20px 20px
+  }
+
+  .timeline-date--right {
+    text-align:right;
+  }
+
+  .timeline-middle {
+    position: relative;
+    background:#3c3589;
+  }
+
+  .timeline-point {
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    width:1vw;
+    height: 1vw;
+    background: white;
+    border-radius: 50%;
+  }
+
+  .timeline-bg {
+    padding:1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .timeline-title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  
+  .timeline-paragraph {
+    line-height: 1.5;
+  }
+
+  .timeline-point-bottom {
+    top:initial;
+    bottom:0;
+  }
+  
+
+ .timeline-image {
+    width: 50px;
+    height: auto;
+    margin-right: 0.5em;
+}
+
+.timeline-title-container {
+    display: flex;
+    align-items: center;
+}
