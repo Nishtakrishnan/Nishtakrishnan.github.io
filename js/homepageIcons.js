@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const introFueled = document.getElementById('intro-fueled');
     const introCuriosity = document.getElementById('intro-curiosity');
     const leftText2 = document.querySelector('.left-text-2');
+    const icons = document.querySelectorAll('.icon a');
 
     // Typing effect function
     function typeEffect(element, text, delay = 100) {
@@ -39,11 +40,18 @@ document.addEventListener('DOMContentLoaded', () => {
                         // Show .left-text-2 after the intro text is done
                         setTimeout(() => {
                             leftText2.classList.add('visible');
+
+                            // Show icons one by one
+                            icons.forEach((icon, index) => {
+                                setTimeout(() => {
+                                    icon.classList.add('visible');
+                                }, index * 500); // Adjust delay between icons as needed
+                            });
                         }, 'Curiosity'.length * 100 + 500); // Adjust delay to match the end of typing animation
                     }, 'Fueled by '.length * 100);
                 }, 'Technology'.length * 100 + 500);
             }, 'Driven by '.length * 100);
-        }, 11000); // Adjust initial delay as needed
+        }, 11500); // Adjust initial delay as needed
     }
 
     // Start typing animation on page load
@@ -53,27 +61,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function updateDimensions() {
-    var sideblock = document.querySelector(".purple-sideblock");
+    var sideblock = document.querySelector(".left-text");
     var mailIcon = document.querySelector(".mail-icon");
     var gitIcon = document.querySelector(".github-icon");
     var linkIcon = document.querySelector(".linkedin-icon");
-    var aboutMe = document.querySelector(".scroll-button")
 
     var sideblockTop = sideblock.offsetTop;
 
-    mailIcon.style.top = (sideblockTop + sideblock.offsetHeight-3) + "px";
-    mailIcon.style.left = 10 + "vw"
-    mailIcon.style.width = 3 + "vw"
+    mailIcon.style.top = (sideblockTop + sideblock.offsetHeight+35) + "px";
+    mailIcon.style.left = 80 + "px"
+    mailIcon.style.width = 50 + "px"
 
-    gitIcon.style.top = (sideblockTop + sideblock.offsetHeight -3) + "px";
-    gitIcon.style.left = 16 + "vw"
-    gitIcon.style.width = 3 + "vw"
+    gitIcon.style.top = (sideblockTop + sideblock.offsetHeight +35) + "px";
+    gitIcon.style.left = 180 + "px"
+    gitIcon.style.width = 50 + "px"
 
-    linkIcon.style.top = (sideblockTop + sideblock.offsetHeight -3) + "px";
-    linkIcon.style.left = 22 + "vw"
-    linkIcon.style.width = 3 + "vw"
-
-    aboutMe.style.top = (sideblockTop + sideblock.offsetHeight+110) + "px";
+    linkIcon.style.top = (sideblockTop + sideblock.offsetHeight +35) + "px";
+    linkIcon.style.left = 280 + "px"
+    linkIcon.style.width = 50 + "px"
 }
 
 window.addEventListener("load", updateDimensions);

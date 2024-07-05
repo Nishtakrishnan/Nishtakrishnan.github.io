@@ -1,6 +1,15 @@
 /* Phones */
 @media (orientation: portrait)  {
 
+    #name {
+        font-size: 10vw;
+    }
+    
+    #subtitle {
+        font-size: 5vw;
+    
+    }
+
     .navbar ul {
         list-style: none;
         display: flex; 
@@ -19,15 +28,6 @@
 
     .page {
         min-height: 100vh;
-    }
-
-    .purple-sideblock {
-        position: absolute; 
-        width: 79vw; 
-        height: 22vh; 
-        top: 25vh;
-        left: 50%; 
-        transform: translateX(-50%);
     }
 
     .bottom-aligned-image {

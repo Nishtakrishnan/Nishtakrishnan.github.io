@@ -25,9 +25,20 @@
     position: absolute;
 }
 
+.icon a {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.icon a.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .left-text {
     margin-left: 6vw;
-    margin-top: 34vh;
+    margin-top: 30vh;
     font-size: 40px;
     font-family: 'Almarai', sans-serif;
     color: #532e79;
