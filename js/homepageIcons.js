@@ -1,3 +1,57 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const introDriven = document.getElementById('intro-driven');
+    const introTech = document.getElementById('intro-tech');
+    const introFueled = document.getElementById('intro-fueled');
+    const introCuriosity = document.getElementById('intro-curiosity');
+    const leftText2 = document.querySelector('.left-text-2');
+
+    // Typing effect function
+    function typeEffect(element, text, delay = 100) {
+        let index = 0;
+        function type() {
+            if (index < text.length) {
+                element.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, delay);
+            }
+        }
+        type();
+    }
+
+    function startTypingAnimation() {
+        // Reset text content and visibility
+        introDriven.textContent = '';
+        introTech.textContent = '';
+        introFueled.textContent = '';
+        introCuriosity.textContent = '';
+        document.querySelector('.intro-text').style.visibility = 'visible';
+        leftText2.classList.remove('visible'); // Ensure .left-text-2 is hidden initially
+
+        // Start typing animation
+        setTimeout(() => {
+            typeEffect(introDriven, 'Driven by ', 100);
+            setTimeout(() => {
+                typeEffect(introTech, 'Technology', 100);
+                setTimeout(() => {
+                    typeEffect(introFueled, 'Fueled by ', 100);
+                    setTimeout(() => {
+                        typeEffect(introCuriosity, 'Curiosity', 100);
+                        // Show .left-text-2 after the intro text is done
+                        setTimeout(() => {
+                            leftText2.classList.add('visible');
+                        }, 'Curiosity'.length * 100 + 500); // Adjust delay to match the end of typing animation
+                    }, 'Fueled by '.length * 100);
+                }, 'Technology'.length * 100 + 500);
+            }, 'Driven by '.length * 100);
+        }, 11000); // Adjust initial delay as needed
+    }
+
+    // Start typing animation on page load
+    startTypingAnimation();
+});
+
+
+
 function updateDimensions() {
     var sideblock = document.querySelector(".purple-sideblock");
     var mailIcon = document.querySelector(".mail-icon");
