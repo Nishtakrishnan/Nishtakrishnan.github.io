@@ -31,8 +31,7 @@
     }
 
     .bottom-aligned-image {
-        width: 70vw;
-        height: auto;
+        visibility: hidden;
     }
 
     .scroll-button {
@@ -80,6 +79,13 @@
         margin-bottom: 0.5em; 
     }
 }
+
+@media (max-width: 1000px) or (max-height: 600px) {
+    .bottom-aligned-image {
+        visibility: hidden;
+    }
+}
+
 
 /* Ipads in portrait */
 @media (orientation: portrait) and (min-width: 500px)  {

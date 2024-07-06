@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }, 'Fueled by '.length * 100);
                 }, 'Technology'.length * 100 + 500);
             }, 'Driven by '.length * 100);
-        }, 11500); // Adjust initial delay as needed
+        }, 11000); // Adjust initial delay as needed
     }
 
     // Start typing animation on page load
@@ -109,3 +109,4 @@ function updateStylesForPhone() {
 
 window.addEventListener("load", updateStylesForPhone);
 window.addEventListener("resize", updateStylesForPhone);
+
