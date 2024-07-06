@@ -42,17 +42,21 @@
     .left-text {
         position: absolute;
         margin-top: 30vh;
-        left: 50%;
+        left: 43%;
         transform: translateX(-50%);
         text-align: center;
-        left: 40%;
         font-size: 5vw;
         max-width: 100%;
     }
+
+    @media (max-height: 700px) {
+        .left-text {
+            margin-top: 20vh;
+        }
+    }
+
     .left-text-2 {
         font-size: 4vw !important;
-        left: 50%;
-        transform: translateX(-50%);
         text-align: center;
     }
 
