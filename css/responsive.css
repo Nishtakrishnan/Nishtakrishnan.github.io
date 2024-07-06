@@ -31,7 +31,9 @@
     }
 
     .bottom-aligned-image {
-        visibility: hidden;
+        width: 70vw;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .scroll-button {
@@ -39,16 +41,19 @@
     }
     .left-text {
         position: absolute;
-        top: calc(20vh);
+        margin-top: 30vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
         left: 40%;
-        font-size: 7vw;
+        font-size: 5vw;
         max-width: 100%;
     }
     .left-text-2 {
-        font-size: 3vw;
+        font-size: 4vw !important;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
     }
 
     .my-expertise-title  {
@@ -66,8 +71,7 @@
     }
 
     .icon {
-        width: 10vw;
-        height: auto;
+        visibility: hidden;
     }
     .timeline-title-container {
         flex-direction: column; 
@@ -81,29 +85,7 @@
 }
 
 @media (max-width: 1000px) or (max-height: 600px) {
-    .bottom-aligned-image {
+    /* .bottom-aligned-image {
         visibility: hidden;
-    }
-}
-
-
-/* Ipads in portrait */
-@media (orientation: portrait) and (min-width: 500px)  {
-    .purple-sideblock {
-        position: absolute; 
-        width: 77vw; 
-        height: 30vh; 
-        top: 39vh;
-    }
-
-    .left-text {
-        position: absolute;
-        top: calc(35vh);
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        left: 40%;
-        font-size: 7vw;
-        max-width: 100%;
-    }
+    } */
 }
