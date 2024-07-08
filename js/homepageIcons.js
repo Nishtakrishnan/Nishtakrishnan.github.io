@@ -92,15 +92,15 @@ function updateStylesForPhone() {
         var sideblock = document.querySelector(".left-text");
         var sideblockTop = sideblock.offsetTop;
 
-        mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 22) + "px";
+        mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 0) + "px";
         mailIcon.style.left = 30 + "vw"
         mailIcon.style.width = 8 + "vw"
 
-        gitIcon.style.top = (sideblockTop + sideblock.offsetHeight + 22) + "px";
+        gitIcon.style.top = (sideblockTop + sideblock.offsetHeight + 0) + "px";
         gitIcon.style.left = 46 + "vw"
         gitIcon.style.width = 8 + "vw"
 
-        linkedinIcon.style.top = (sideblockTop + sideblock.offsetHeight + 22) + "px";
+        linkedinIcon.style.top = (sideblockTop + sideblock.offsetHeight + 0) + "px";
         linkedinIcon.style.left = 62 + "vw"
         linkedinIcon.style.width = 8 + "vw"
 
