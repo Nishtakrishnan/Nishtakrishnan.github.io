@@ -13,7 +13,7 @@
     background: -webkit-linear-gradient(#694adc, #d6a7ec);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: slideInText 3s ease-out forwards, fadeOutName 4s ease-out forwards 5s; /* Animation names and timing */
+    animation: slideInText 10s ease-out forwards, fadeOutName 4s ease-out forwards 5s; /* Animation names and timing */
     font-family: 'Almarai', sans-serif;
 }
 
