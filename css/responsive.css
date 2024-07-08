@@ -30,7 +30,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        min-height: 100vh;
+        height: -webkit-fill-available;
     }
 
     .bottom-aligned-image {
