@@ -1,5 +1,5 @@
 /* Phones */
-@media (orientation: portrait) {
+@media (orientation: portrait)  {
 
     #name {
         font-size: 10vw;
@@ -7,6 +7,7 @@
     
     #subtitle {
         font-size: 5vw;
+    
     }
 
     .navbar ul {
@@ -26,43 +27,47 @@
     }
 
     .page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        height: -webkit-fill-available;
+        min-height: 100vh;
     }
 
     .bottom-aligned-image {
+        visibility: hidden;
         width: 70vw;
-        height: auto;
-        position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin-bottom: 0;
     }
-
 
     .scroll-button {
         display: none;
     }
-
     .left-text {
-        display: none; 
-        margin-top:0vh;
+        position: absolute;
+        margin-top: 30vh;
+        left: 43%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 5vw;
+        max-width: 100%;
+    }
+
+    @media (max-height: 700px) {
+        .left-text {
+            margin-top: 20vh;
+        }
     }
 
     .left-text-2 {
-        display: none; 
+        font-size: 4vw !important;
+        text-align: center;
     }
 
-    .my-expertise-title {
+    .my-expertise-title  {
         font-size: 5vw;
     }
 
     .expertise-container {
-        flex-direction: column; 
-    }
+    flex-direction: column; 
+    }   
 
     .square {
         width: 70vw;
@@ -71,10 +76,8 @@
     }
 
     .icon {
-        display: none; 
-        margin-top:0vh;
+        visibility: hidden;
     }
-
     .timeline-title-container {
         flex-direction: column; 
         align-items: center; 
@@ -86,24 +89,24 @@
     }
 }
 
-
-/* Ipads in portrait */
-@media (orientation: portrait) and (min-width: 500px)  {
-    .purple-sideblock {
-        position: absolute; 
-        width: 77vw; 
-        height: 30vh; 
-        top: 39vh;
+@media (min-aspect-ratio: 1.2/1) and (width < 1000px) {
+    .bottom-aligned-image {
+        visibility: hidden;
     }
-
     .left-text {
         position: absolute;
-        top: calc(35vh);
-        left: 50%;
+        margin-top: 25vh;
+        left: 43%;
         transform: translateX(-50%);
         text-align: center;
-        left: 40%;
-        font-size: 7vw;
+        font-size: 8vh;
         max-width: 100%;
     }
+    .left-text-2 {
+        font-size: 3vh !important;
+        left: 43%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    
 }
