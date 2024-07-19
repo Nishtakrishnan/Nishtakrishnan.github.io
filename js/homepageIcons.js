@@ -45,16 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
                             icons.forEach((icon, index) => {
                                 setTimeout(() => {
                                     icon.classList.add('visible');
-                                }, index * 500); // Adjust delay between icons as needed
+                                }, index * 500); 
                             });
-                        }, 'Curiosity'.length * 100 + 500); // Adjust delay to match the end of typing animation
+                        }, 'Curiosity'.length * 100 + 500); 
                     }, 'Fueled by '.length * 100);
                 }, 'Technology'.length * 100 + 500);
             }, 'Driven by '.length * 100);
-        }, 11000); // Adjust initial delay as needed
+        }, 11000); 
     }
 
-    // Start typing animation on page load
     startTypingAnimation();
 });
 
@@ -92,15 +91,15 @@ function updateStylesForPhone() {
         var sideblock = document.querySelector(".left-text");
         var sideblockTop = sideblock.offsetTop;
 
-        mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 0) + "px";
+        mailIcon.style.top = (sideblockTop + sideblock.offsetHeight + 10) + "px";
         mailIcon.style.left = 30 + "vw"
         mailIcon.style.width = 8 + "vw"
 
-        gitIcon.style.top = (sideblockTop + sideblock.offsetHeight + 0) + "px";
+        gitIcon.style.top = (sideblockTop + sideblock.offsetHeight + 10) + "px";
         gitIcon.style.left = 46 + "vw"
         gitIcon.style.width = 8 + "vw"
 
-        linkedinIcon.style.top = (sideblockTop + sideblock.offsetHeight + 0) + "px";
+        linkedinIcon.style.top = (sideblockTop + sideblock.offsetHeight + 10) + "px";
         linkedinIcon.style.left = 62 + "vw"
         linkedinIcon.style.width = 8 + "vw"
 

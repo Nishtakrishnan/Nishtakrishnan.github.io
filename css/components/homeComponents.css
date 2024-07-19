@@ -1,14 +1,6 @@
 /* Homepage Components */
 
-/* .purple-sideblock {
-    background-color: rgba(94, 59, 238, 0.8);
-    width: 37vw;
-    height: 21vw;
-    position: absolute;
-    top: 38vh;
-    right: 6vw;
-    border-radius: 2rem;
-} */
+
 
 .bottom-aligned-image {
     position: absolute;
@@ -63,9 +55,9 @@
 
 
 .left-text-2 {
-    opacity: 0; /* Initially hidden */
-    transform: translateY(50px); /* Start below the original position */
-    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+    opacity: 0; 
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out; 
 }
 
 .left-text-2.visible {

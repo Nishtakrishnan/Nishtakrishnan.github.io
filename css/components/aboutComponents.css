@@ -3,7 +3,6 @@
 #about {
     position: absolute;
     background-color: #1F1F1F;
-    padding-top: 80px;
 }
 
 .about-paragraph {
@@ -137,45 +136,3 @@
     display: flex;
     align-items: center;
 }
-
-#experience {
-    position: absolute;
-    background-color: #7b61ff; /* Purple background color */
-}
-
-.heading {
-	text-align: center;
-	width: 100%;
-	float: left;
-	padding-bottom:20px;
-  padding-top: 50px;
-}
-.heading h5 {
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: rgba(0, 0, 0, 0.5);;
-	font-size: 5vw;
-	color: rgba(0, 0, 0, 0.5);
-	font-weight: 600;
-	letter-spacing: 0.5rem;
-	pointer-events: none;
-	margin: 0px;
-	padding: 0px;
-  
-}
-/* .heading h2 {
-	font-weight: 600!important;
-	color: #39394d;
-	margin: 0px;
-	padding: 0px;
-	position: relative;
-	bottom:70px;
-  opacity: 1;
-}
-.heading-border {
-	height: 4px;
-	width:20px;
-	margin-bottom:10px;
-	margin-top: 0px;
-	display: inline-block;
-	background-color:#725F78;
-} */
