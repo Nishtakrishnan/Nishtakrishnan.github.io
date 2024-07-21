@@ -17,3 +17,41 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const circles = document.querySelectorAll('#experience .circle');
+    const experienceSection = document.getElementById('experience');
+    const experienceTitle = document.querySelector('#experience .experience-title');
+
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+
+                setTimeout(() => {
+                    experienceTitle.classList.add('fade-in');
+                    
+                    // Fade in the circles after the title animation completes
+                    setTimeout(() => {
+                        circles.forEach((circle, index) => {
+                            setTimeout(() => {
+                                circle.classList.add('fade-in');
+                            }, index * 800); // Delay each circle by 800ms
+                        });
+                    }, 1200); // Delay the start of circles animation by 1.2s to ensure title is fully visible
+                }, 200); 
+
+                
+                observer.unobserve(experienceSection);
+            }
+        });
+    }, observerOptions);
+
+    observer.observe(experienceSection);
+});

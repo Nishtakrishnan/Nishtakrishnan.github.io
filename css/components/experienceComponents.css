@@ -14,7 +14,7 @@
 }
 
 .grid-outline-2 {
-    margin: 100px auto;
+    margin: 120px;
     max-width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr 10vw 1fr 1fr;
@@ -28,6 +28,12 @@
     border-radius: 50%;
     background-color: blueviolet;
     margin: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.circle.fade-in {
+    opacity: 1;
 }
 
 .circle-image {
@@ -35,27 +41,16 @@
     height: 100%;
     object-fit: contain; /* Ensures the image covers the container */
 }
-#experience-title {
-    font-size: 7rem; /* Adjust size as needed */
+
+.experience-title {
+    font-size: 7rem;
     text-align: center;
-    margin: 2rem 0; /* Adjust spacing as needed */
-    opacity: 0;
-    animation: fadeInOut 5s ease-in-out forwards; /* Animation name, duration, timing function */
+    margin: 2rem 0; 
     color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-/* Keyframes for fade-in and fade-out effect */
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+.experience-title.fade-in {
+    opacity: 1;
 }
