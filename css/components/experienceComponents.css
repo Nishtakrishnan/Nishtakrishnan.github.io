@@ -14,7 +14,7 @@
 }
 
 .grid-outline-2 {
-    margin: 120px;
+    margin: 70px auto;
     max-width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr 10vw 1fr 1fr;
@@ -23,8 +23,8 @@
 }
 
 .circle {
-    width: 15vw;
-    height: 15vw;
+    width: 12vw;
+    height: 12vw;
     border-radius: 50%;
     background-color: blueviolet;
     margin: auto;
@@ -54,3 +54,72 @@
 .experience-title.fade-in {
     opacity: 1;
 }
+
+.experience-title.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* New class for "Click to learn more" */
+.click-to-learn-more {
+    font-family: 'Public Sans', sans-serif;
+    text-align: center; 
+    color: #bdbcbc;
+    margin: 0px 130px 5vw;
+    font-size: 20px;
+    opacity: 80%;
+    font-weight: normal;
+}
+
+.circle-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Black strip */
+.black-strip {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color:rgba(34, 31, 31, 0.8);
+    transition: height 0.5s ease-in-out;
+}
+
+.black-strip.active {
+    display: block;
+    height: 350px; 
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.centered {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
