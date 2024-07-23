@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         // Wait for the fade-out to complete before changing the text
                         setTimeout(() => {
-                            experienceTitle.textContent = "Click to learn more";
+                            experienceTitle.textContent = "Click to learn more!";
                             experienceTitle.classList.remove('fade-out');
                             experienceTitle.classList.add('fade-in');
                             experienceTitle.classList.add('click-to-learn-more'); // Add the new class
