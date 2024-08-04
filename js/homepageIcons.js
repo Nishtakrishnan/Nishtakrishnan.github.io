@@ -59,29 +59,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-function updateDimensions() {
-    var sideblock = document.querySelector(".left-text");
-    var mailIcon = document.querySelector(".mail-icon");
-    var gitIcon = document.querySelector(".github-icon");
-    var linkIcon = document.querySelector(".linkedin-icon");
+// function updateDimensions() {
+//     var sideblock = document.querySelector(".left-text");
+//     var mailIcon = document.querySelector(".mail-icon");
+//     var gitIcon = document.querySelector(".github-icon");
+//     var linkIcon = document.querySelector(".linkedin-icon");
 
-    var sideblockTop = sideblock.offsetTop;
+//     var sideblockTop = sideblock.offsetTop;
 
-    mailIcon.style.top = (sideblockTop + sideblock.offsetHeight+35) + "px";
-    mailIcon.style.left = 80 + "px"
-    mailIcon.style.width = 50 + "px"
+//     mailIcon.style.top = (sideblockTop + sideblock.offsetHeight+35) + "px";
+//     mailIcon.style.left = 80 + "px"
+//     mailIcon.style.width = 50 + "px"
 
-    gitIcon.style.top = (sideblockTop + sideblock.offsetHeight +35) + "px";
-    gitIcon.style.left = 180 + "px"
-    gitIcon.style.width = 50 + "px"
+//     gitIcon.style.top = (sideblockTop + sideblock.offsetHeight +35) + "px";
+//     gitIcon.style.left = 180 + "px"
+//     gitIcon.style.width = 50 + "px"
 
-    linkIcon.style.top = (sideblockTop + sideblock.offsetHeight +35) + "px";
-    linkIcon.style.left = 280 + "px"
-    linkIcon.style.width = 50 + "px"
-}
+//     linkIcon.style.top = (sideblockTop + sideblock.offsetHeight +35) + "px";
+//     linkIcon.style.left = 280 + "px"
+//     linkIcon.style.width = 50 + "px"
+// }
 
-window.addEventListener("load", updateDimensions);
-window.addEventListener("resize", updateDimensions);
+// window.addEventListener("load", updateDimensions);
+// window.addEventListener("resize", updateDimensions);
 
 function updateStylesForPhone() {
     if (window.innerHeight > window.innerWidth) {

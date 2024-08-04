@@ -51,7 +51,6 @@
 .experience-title {
     font-size: 7rem;
     text-align: center;
-    margin: 2rem 0; 
     color: white;
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -66,7 +65,6 @@
     transition: opacity 1s ease-in-out;
 }
 
-/* New class for "Click to learn more" */
 .click-to-learn-more {
     font-family: 'Public Sans', sans-serif;
     text-align: center; 

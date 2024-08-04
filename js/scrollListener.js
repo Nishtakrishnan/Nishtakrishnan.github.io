@@ -52,13 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         });
                     }, 1200); // Delay the start of circles animation by 1.2s to ensure title is fully visible
 
-                    // Change the title text after all circles have appeared and 5 seconds have passed
                     const totalCirclesDuration = 1200 + circles.length * 800; // 1200ms delay + 800ms for each circle
                     setTimeout(() => {
                         experienceTitle.classList.remove('fade-in');
                         experienceTitle.classList.add('fade-out');
 
-                        // Wait for the fade-out to complete before changing the text
                         setTimeout(() => {
                             experienceTitle.textContent = "Click to learn more!";
                             experienceTitle.classList.remove('fade-out');

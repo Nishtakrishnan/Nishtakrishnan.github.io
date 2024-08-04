@@ -1,6 +1,10 @@
 /* Homepage Components */
 
-
+#homepage {
+    position: relative;
+    height: 100vh; /* Fix the height to 100% of the viewport height */
+    overflow: hidden; /* Prevent content from overflowing */
+}
 
 .bottom-aligned-image {
     position: absolute;
@@ -11,21 +15,27 @@
     transform: translateX(0);
 }
 
-.mail-icon,
-.github-icon,
-.linkedin-icon {
+.icon a img {
     position: absolute;
+    transition: top 0.3s, left 0.3s, width 0.3s;
 }
 
-.icon a {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+.mail-icon img {
+    margin-top: 30px;
+    left: 80px;
+    width: 50px;
 }
 
-.icon a.visible {
-    opacity: 1;
-    transform: translateY(0);
+.github-icon img {
+    margin-top: 30px;
+    left: 180px;
+    width: 50px;
+}
+
+.linkedin-icon img {
+    margin-top: 30px;
+    left: 280px;
+    width: 50px;
 }
 
 .left-text {
@@ -39,7 +49,7 @@
 }
 
 .intro-text {
-    visibility: hidden; /* Initially hidden */
+    visibility: hidden; 
 }
 
 .intro-text span {
