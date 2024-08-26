@@ -1,4 +1,5 @@
 #projects {
+    padding-top: 100px;
     position: absolute;
     background-color: #1F1F1F;
 }
@@ -8,3 +9,90 @@
     font-size: 3rem;
     color: rgb(227, 220, 220);
 }
+
+.purple-square {
+    position: absolute;
+    background-color: rgba(94, 59, 238, 0.4); 
+    width: 60vw; 
+    height: 500px; 
+    border: 2px solid rgba(173, 155, 248, 0.4); 
+    border-radius: 50px; 
+    margin-top: 100px;
+    right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-text::after {
+    content: "";
+    display: block;
+    width: 250px; 
+    height: 5px; 
+    background-color: #ffffff; /* Color of the line */
+    margin-top: 10px; 
+}
+
+.vertical-text {
+    font-size: 6rem;
+    color: #ffffff;
+    margin-top: 100px;
+    margin-left: 7vw;
+}
+
+
+.additional-text {
+    font-size: 1.5rem; /* Smaller font size */
+    color: #969696;
+    margin-top: 40px; /* Space between the line and the text */
+    margin-left: 7vw; /* Same left margin as .vertical-text */
+    max-width: 250px;
+}
+
+  
+  :root {
+    --color-background: #000119;
+    --stroke-width: calc(1em / 16);
+    --font-size: 5vw;
+    --font-weight: 700;
+  }
+
+.stroke-text {
+    margin-top: 20px;
+    background-clip: text;
+    background-image: linear-gradient(to right, #b58db6, #d0c1f2);
+    color: var(--color-background);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  letter-spacing: var(--letter-spacing);
+  padding: calc(--stroke-width / 2);
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: var(--stroke-width);
+}
+
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.arrow-button:hover {
+    color: rgb(86, 86, 86);
+}
+
+.left-arrow {
+    left: 1rem; /* Position on the left edge */
+    display: none; /* Initially hidden */
+}
+
+.right-arrow {
+    right: 1rem; 
+    display: block; /* Initially visible */
+}
+

@@ -80,3 +80,14 @@
     margin-top: 10px;
     max-width: 600px;
 }
+
+.icon a {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Move down initially */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+}
+
+.icon a.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}

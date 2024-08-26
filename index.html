@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="intro">
+    <!-- <div class="intro">
         <div id="title"> 
             <h1 id="name">NISHTA KRISHNAN</h1>
             <h1 id="subtitle">Software Engineer & Data Analyst</h1>
         </div>
-    </div>
+    </div> -->
 
     <div class="main-content">
         <!-- Navbar -->
@@ -100,6 +100,9 @@
                     </h2>
                 </div>
             </div>
+            <div class="my-expertise-title">
+                <h2>Education</h2>
+            </div>
             <div class="timeline">
                 <div class="timeline-component">
                     <div class="timeline-date timeline-date--right"> May 2024 </div>
@@ -119,6 +122,13 @@
                     <p class="timeline-paragraph">
                         Bsc Math and CS
                     </p>
+                    <a class="read-more">Read more</a>
+                    <div class="timeline-more-content">
+                        <!-- Additional content goes here -->
+                        Additional content.
+                        <img src="images/experiencepage/DSC09578.jpg" alt="Additional Content Image" class="timeline-image-me">
+                        <a class="read-less">Read less</a>
+                    </div>  
                 </div>
                 <div class="timeline-component timeline-bg">
                     <h2 class="timeline-title">
@@ -132,6 +142,12 @@
                     <p class="timeline-paragraph">
                         Bsc Math and CS
                     </p>
+                    <a class="read-more">Read more</a>
+                    <div class="timeline-more-content">
+                        <!-- Additional content goes here -->
+                        Additional content.
+                        <a class="read-less">Read less</a>
+                    </div> 
                 </div>  
                 <div class="timeline-middle">
                     <div class="timeline-point"></div>
@@ -142,55 +158,98 @@
             </div>
         </div>
 
-        <!-- Experience Page Section -->
-        <div class="page" id="experience">
-            <div class="grid-outline-1">
-                <div class="circle fti-circle" style="grid-column: 1; grid-row: 1;">
-                    <button class="circle-button">
-                        <img src="images/fti-modified.png" class="circle-image">
-                    </button>
-                </div>
-                <div class="circle illinois-circle" style="grid-column: 2; grid-row: 1;">
-                    <button class="circle-button">
-                        <img src="images/illinois-modified.png" class="circle-image">
-                    </button>
-                </div>
-                <div class="circle nuware-circle" style="grid-column: 3; grid-row: 1;">
-                    <button class="circle-button">
-                        <img src="images/nuware-modified.png" class="circle-image">
-                    </button>
-                </div>
+       <!-- Experience Page Section -->
+       <div class="page" id="experience">
+        <div class="grid-outline-1">
+            <div class="circle fti-circle" style="grid-column: 1; grid-row: 1;">
+                <button class="circle-button">
+                    <img src="images/experiencepage/fti-modified.png" class="circle-image">
+                </button>
             </div>
-        
-            <h2 class="experience-title">Experience</h2>
-        
-            <div class="grid-outline-2">
-                <div class="circle valley-circle" style="grid-column: 2; grid-row: 1;">
-                    <button class="circle-button"> 
-                        <img src="images/valley-modified.png" class="circle-image">
-                    </button>
-                </div>
-                <div class="circle mu-circle" style="grid-column: 4; grid-row: 1;">
-                    <button class="circle-button"> 
-                         <img src="images/Mu-Sigma-modified.png" class="circle-image">
-                    </button>
-                </div>
+            <div class="circle illinois-circle" style="grid-column: 2; grid-row: 1;">
+                <button class="circle-button">
+                    <img src="images/experiencepage/illinois-modified.png" class="circle-image">
+                </button>
             </div>
-        
-            <div class="black-strip">
-                <span class="close-btn">&times;</span>
+            <div class="circle valley-circle" style="grid-column: 3; grid-row: 1;">
+                <button class="circle-button"> 
+                    <img src="images/experiencepage/valley-modified.png" class="circle-image">
+                </button>
+            </div>
+        </div>
+    
+        <h2 class="experience-title">Experience</h2>
+    
+        <div class="grid-outline-2">
+            <div class="circle nuware-circle" style="grid-column: 1; grid-row: 1;">
+                <button class="circle-button">
+                    <img src="images/experiencepage/nuware-modified.png" class="circle-image">
+                </button>
+            </div>
+            <div class="circle awaaz-circle" style="grid-column: 2; grid-row: 1;">
+                <button class="circle-button"> 
+                     <img src="images/experiencepage/awaaz-modified.png" class="circle-image">
+                </button>
+            </div>
+            <div class="circle mu-circle" style="grid-column: 3; grid-row: 1;">
+                <button class="circle-button"> 
+                     <img src="images/experiencepage/Mu-Sigma-modified.png" class="circle-image">
+                </button>
+            </div>
+        </div>
+    
+        <div class="black-strip">
+            <div class="experience-name"></div>
+            <div class="circle centered"></div> 
+            <span class="close-btn">&times;</span>
+            <video id="black-strip-video" class="black-strip-video" controls></video>
+            <img id="black-strip-image" class="black-strip-image" alt="Valley Experience">
+        </div>
+    </div>
+
+        <div class="page" id="projects">
+            <div class="purple-square">
+                <h1 class="stroke-text">Placeranker</h1>
+                <button class="arrow-button left-arrow" onclick="showPreviousSlide()">&#9664;</button>
+                <button class="arrow-button right-arrow" onclick="showNextSlide()">&#9654;</button>
+            </div>
+            <div class="vertical-text">My <br> Work</div>
+            <div class="additional-text">
+                These are a couple of projects I worked on
             </div>
         </div>
 
-        <div class="page" id="projects">
-            <h2 class="projects-title">Projects</h2>
+        <div class="page" id="contact">
+            <h2 class="contact-message">Get in touch!</h2>
+            <p class="contact-subtext">Have any questions or just want to chat? Go ahead.</p>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mrbzrwaa" method="POST">
+                    <div class="form-content">
+                        <div class="form-group">
+                            <input type="text" name="first-name" placeholder="First Name" required>
+                            <input type="text" name="last-name" placeholder="Last Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group message">
+                            <textarea name="message" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="send-button">Send</button>
+                </form>
+            </div>
         </div>
-     
+        <div class="page" id="footer">
+            <footer class="contact-footer">
+                <p>&copy; 2024 Nishta Krishnan. All rights reserved.</p>
+            </footer>
+        </div>
+        
     </div>
 
     <!-- JavaScript -->
     <script src="js/homepageIcons.js"></script>
     <script src="js/pageDimensions.js"></script>
     <script src="js/scrollListener.js"></script>
+    <script src="js/timeline.js"></script>
 </body>
 </html>

@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const valleyCircle = document.querySelector('.valley-circle');
     const nuwareCircle = document.querySelector('.nuware-circle');
     const muCircle = document.querySelector('.mu-circle');
+    const awaazCircle = document.querySelector('.awaaz-circle');
     const experienceSection = document.getElementById('experience');
     const experienceTitle = document.querySelector('#experience .experience-title');
     const blackStrip = document.querySelector('.black-strip');
@@ -74,21 +75,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observer.observe(experienceSection);
 
-    // Function to handle circle click and show black strip
-    const handleCircleClick = (circle) => {
+    const handleCircleClick = (circle, experienceName, videoSource = null, imageSource = null) => {
+        const circleClone = circle.cloneNode(true);
+        circleClone.classList.add('clone');
         circles.forEach(c => {
             if (c !== circle) {
                 c.classList.add('hidden');
             }
         });
         experienceTitle.classList.add('hidden');
-        circle.classList.add('centered');
+        circle.classList.add('hidden'); // Hide the original circle
+    
+        // Add styling to the clone if necessary
+        circleClone.classList.add('centered');
         blackStrip.classList.add('active');
-    };
+    
+        const experienceText = blackStrip.querySelector('.experience-name');
+        experienceText.textContent = experienceName;
 
-    // Show black strip and center the clicked circle when a circle is clicked
+        if (videoSource) {
+            const videoElement = document.getElementById('black-strip-video');
+            videoElement.src = videoSource;
+            videoElement.style.display = 'block'; 
+            videoElement.load(); 
+        }
+
+        if (imageSource) {
+            const imageElement = document.getElementById('black-strip-image');
+            imageElement.src = imageSource;
+            imageElement.style.display = 'block'; // Show the image
+        }
+    
+        // Move the cloned circle to the black strip
+        blackStrip.appendChild(circleClone);
+    };
+    
+    
+    
+    
+    // Example usage with specific experience names
     ftiCircle.addEventListener('click', () => {
-        handleCircleClick(ftiCircle);
+        handleCircleClick(ftiCircle, "FTI Experience");
     });
 
     illinoisCircle.addEventListener('click', () => {
@@ -100,20 +127,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     valleyCircle.addEventListener('click', () => {
-        handleCircleClick(valleyCircle);
+        handleCircleClick(valleyCircle, "Valley Experience", null, "images/experiencepage/valley-outreach.png");
     });
 
     muCircle.addEventListener('click', () => {
         handleCircleClick(muCircle);
     });
 
-    // Hide black strip and show all circles when the close button is clicked
+    awaazCircle.addEventListener('click', () => {
+        handleCircleClick(awaazCircle, "Awaaz", "images/experiencepage/IMG_5951.mov");
+    });
+
     closeButton.addEventListener('click', () => {
         blackStrip.classList.remove('active');
+
+        const videoElement = document.getElementById('black-strip-video');
+        if (videoElement) {
+            videoElement.pause(); // Stop the video playback
+            videoElement.currentTime = 0; // Reset the video to the beginning
+            videoElement.style.display = 'none'; // Hide the video
+        }
+
+        const imageElement = document.getElementById('black-strip-image');
+        if (imageElement) {
+            imageElement.style.display = 'none';
+        }
+    
+        // Restore the original circle and remove the clone
         circles.forEach(circle => {
             circle.classList.remove('hidden');
-            circle.classList.remove('centered');
+            
+            // Remove the clone if it exists in the black strip
+            const clone = blackStrip.querySelector('.clone');
+            if (clone) {
+                blackStrip.removeChild(clone);
+            }
+    
+            // Ensure the original circle is visible again
+            circle.classList.remove('hidden');
         });
+    
         experienceTitle.classList.remove('hidden');
     });
+    
 });

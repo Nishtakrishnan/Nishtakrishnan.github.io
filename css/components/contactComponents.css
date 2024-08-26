@@ -1,0 +1,110 @@
+#contact {
+    padding-top: 70px;
+    position: absolute;
+    background-color: rgba(94, 59, 238, 0.1);
+    min-height: 80vh;
+}
+
+.contact-message {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #452c63;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-subtext {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+    color:rgb(146, 130, 130);
+    font-family: 'Roboto', sans-serif;
+}
+.contact-form {
+    position: relative; 
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    position: absolute; 
+    top: 20px; 
+    left: 0;
+    right: 0;
+}
+
+.form-content {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px; /* Space between form fields and the send button */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    flex: 1;
+}
+
+.form-group input, .form-group textarea {
+    padding: 15px; /* Increase padding for larger input boxes */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Increase font size for bigger inputs */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+    outline: none; /* Remove the default blue outline on focus */
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #300138; /* Optional: Change border color on focus */
+}
+
+.message {
+    flex: 2;
+}
+
+.message textarea {
+    height: 180px; /* Slightly increase height */
+    resize: none; /* Prevent resizing */
+}
+
+.send-button {
+    position: relative;
+    margin: 20px auto 0; /* Center horizontally with auto margins */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: auto; /* Adjust width to fit content */
+    max-width: 200px; /* Optional: Set a max-width if needed */
+    text-align: center; /* Center text inside the button */
+}
+
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+
+
+#footer {
+    background-color: #333; /* Footer background color */
+    padding: 20px 0px;
+    text-align: center;
+    color: white;
+    width: 100%; /* Ensure footer spans full width */
+    position: absolute;
+    bottom: 0; /* Position footer at the bottom */
+    min-height: 0px;
+    padding-bottom: 30px;
+}
+
+.contact-footer p {
+    margin: 0;
+}

@@ -1,6 +1,7 @@
 /* About page Components */
 
 #about {
+  padding-top: 100px;
     position: absolute;
     background-color: #1F1F1F;
 }
@@ -22,6 +23,16 @@
     margin: 100px 6vw 0;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+
+}
+
+.education-title {
+  box-sizing: border-box; 
+  text-align: center; 
+  color: #ffffff;
+  margin: 50px 6vw 0;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -71,68 +82,93 @@
 }
 
 .timeline {
-    margin: 150px auto;
-    max-width: 90vw;
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
-    font-family: "Fira Sans", sans-serif;
-    color: #ffffff;
-  }
+  margin: 50px auto;
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Fira Sans", sans-serif;
+  color: #ffffff;
+}
 
-  .timeline-component {
-    margin: 0 20px 20px
-  }
+.timeline-component {
+  margin: 0 20px 20px;
+}
 
-  .timeline-date--right {
-    text-align:right;
-  }
+.timeline-date--right {
+  text-align: right;
+}
 
-  .timeline-middle {
-    position: relative;
-    background:#3c3589;
-  }
+.timeline-middle {
+  position: relative;
+  background: #3c3589;
+}
 
-  .timeline-point {
-    position:absolute;
-    top:0;
-    left:50%;
-    transform: translateX(-50%);
-    width:1vw;
-    height: 1vw;
-    background: white;
-    border-radius: 50%;
-  }
+.timeline-point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1vw;
+  height: 1vw;
+  background: white;
+  border-radius: 50%;
+}
 
-  .timeline-bg {
-    padding:1.5em;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
+.timeline-bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+}
 
-  .timeline-title {
-    margin: 0;
-    font-size: 1.15em;
-    font-weight: bold;
-  }
-  
-  .timeline-paragraph {
-    line-height: 1.5;
-  }
+.timeline-title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
 
-  .timeline-point-bottom {
-    top:initial;
-    bottom:0;
-  }
-  
+.timeline-paragraph {
+  line-height: 1.5;
+}
 
- .timeline-image {
-    width: 50px;
-    height: auto;
-    margin-right: 0.5em;
+.timeline-point-bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline-image {
+  width: 70%;
+  height: auto;
+  margin-right: 0.5em;
 }
 
 .timeline-title-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-more-content {
+  display: none;
+}
+
+.read-more, .read-less {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.read-more:hover, .read-less:hover {
+  color: white;
+}
+
+.timeline-image-me {
+  width: 50%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px auto; /* Center the image horizontally and add vertical space */
+    display: block; /* Ensure the margin auto works for centering */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
