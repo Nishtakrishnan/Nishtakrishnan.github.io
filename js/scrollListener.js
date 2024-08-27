@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     awaazCircle.addEventListener('click', () => {
-        handleCircleClick(awaazCircle, "Awaaz", "images/experiencepage/IMG_5951.mov");
+        handleCircleClick(awaazCircle, "Awaaz", "images/IMG_5951.mov");
     });
 
     closeButton.addEventListener('click', () => {
@@ -143,9 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const videoElement = document.getElementById('black-strip-video');
         if (videoElement) {
-            videoElement.pause(); // Stop the video playback
-            videoElement.currentTime = 0; // Reset the video to the beginning
-            videoElement.style.display = 'none'; // Hide the video
+            videoElement.pause(); 
+            videoElement.currentTime = 0; 
+            videoElement.style.display = 'none'; 
         }
 
         const imageElement = document.getElementById('black-strip-image');
@@ -153,11 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
             imageElement.style.display = 'none';
         }
     
-        // Restore the original circle and remove the clone
         circles.forEach(circle => {
             circle.classList.remove('hidden');
             
-            // Remove the clone if it exists in the black strip
             const clone = blackStrip.querySelector('.clone');
             if (clone) {
                 blackStrip.removeChild(clone);

@@ -29,7 +29,7 @@
     display: block;
     width: 250px; 
     height: 5px; 
-    background-color: #ffffff; /* Color of the line */
+    background-color: #ffffff; 
     margin-top: 10px; 
 }
 
@@ -42,11 +42,12 @@
 
 
 .additional-text {
-    font-size: 1.5rem; /* Smaller font size */
+    font-size: 1.5rem; 
     color: #969696;
-    margin-top: 40px; /* Space between the line and the text */
-    margin-left: 7vw; /* Same left margin as .vertical-text */
+    margin-top: 40px; 
+    margin-left: 7vw; 
     max-width: 250px;
+    margin-bottom: 200px;
 }
 
   
@@ -87,12 +88,21 @@
 }
 
 .left-arrow {
-    left: 1rem; /* Position on the left edge */
-    display: none; /* Initially hidden */
+    left: 1rem; 
+    display: none; 
 }
 
 .right-arrow {
     right: 1rem; 
-    display: block; /* Initially visible */
+    display: block; 
+}
+
+
+.placeranker-video {
+    width: 50%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Space between video and the text above */
+    border-radius: 10px; /* Optional: round the video corners */
+    max-height: 80%; /* Ensure the video doesn't exceed container height */
 }
 
