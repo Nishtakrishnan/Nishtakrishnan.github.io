@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     awaazCircle.addEventListener('click', () => {
-        handleCircleClick(awaazCircle, "Awaaz", "images/IMG_5951.mov");
+        handleCircleClick(awaazCircle, "Awaaz", "images/IMG_5951.mp4");
     });
 
     closeButton.addEventListener('click', () => {
