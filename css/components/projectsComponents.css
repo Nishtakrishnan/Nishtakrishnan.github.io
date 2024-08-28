@@ -1,5 +1,5 @@
 #projects {
-    padding-top: 100px;
+    padding-top: 30px;
     position: absolute;
     background-color: #1F1F1F;
 }
@@ -14,7 +14,7 @@
     position: absolute;
     background-color: rgba(94, 59, 238, 0.4);
     width: 60vw;
-    height: 500px;
+    height: 550px;
     border: 2px solid rgba(173, 155, 248, 0.4);
     border-radius: 50px;
     margin-top: 100px;
@@ -47,7 +47,7 @@
     margin-top: 40px; 
     margin-left: 7vw; 
     max-width: 250px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
 }
 
   
@@ -99,9 +99,6 @@
 }
 
 .placeranker-video {
-    position: absolute; 
-    bottom: 30px; 
-    left: 30px;
     width: 40%; 
     height: auto; 
     border-radius: 10px; 
@@ -170,4 +167,36 @@
     color:rgb(1, 1, 1);
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;    
+}
+
+.content-container {
+    position: absolute; 
+    bottom: 30px; 
+    left: 30px;
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Aligns items vertically in the container */
+}
+
+.grey-rectangle {
+    background-color: rgba(204, 204, 204, 0.3); /* Grey color for the rectangle */
+    width: 40%; /* Adjust the width as needed */
+    height: 150px;
+    padding: 20px; /* Adds some padding inside the rectangle */
+    margin-left: 3vw; /* Space between the video and rectangle */
+    border-radius: 10px; /* Optional: round the rectangle corners */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    line-height: 1.5; /* Increase line spacing */
+    color:beige;
+}
+
+ul.custom-bullets {
+    list-style-type: disc; /* Style of the bullet points */
+    padding-left: 20px; /* Space between bullet and text */
+    margin: 0; /* Remove default margin */
+}
+
+/* Optional: Adjust the font size and line spacing */
+ul.custom-bullets li {
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
