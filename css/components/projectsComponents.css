@@ -21,7 +21,6 @@
     right: 70px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
     justify-content: flex-start; 
 }
 
@@ -134,7 +133,6 @@
     width: 7vw; 
     height: 2vw; 
     background-color: #d0c1f2; 
-    text-align: center; 
     line-height: 2vw; 
     border-radius: 5px; 
     text-decoration: none; 
@@ -143,8 +141,33 @@
     cursor: pointer;
     overflow: hidden; 
     margin-top: 9vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .github-button-traveling-salesman:hover {
     background-color: #b58db6; /* Darker purple on hover */
+}
+
+.project-description {
+    margin-top: -2.5vw; 
+    text-align: left; 
+    margin-left: 1vw;
+    font-weight: normal; 
+    font-size: 18px; 
+    color:rgb(154, 154, 154);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;    
+}
+
+.tech-stack {
+    margin-top: 0px; 
+    text-align: left; 
+    margin-left: 1vw;
+    font-weight: normal; 
+    font-size: 18px; 
+    color:rgb(1, 1, 1);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;    
 }
