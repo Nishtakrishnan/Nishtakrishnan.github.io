@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observer.observe(experienceSection);
 
-    const handleCircleClick = (circle, experienceName, videoSource = null, imageSource = null) => {
+    const handleCircleClick = (circle, experienceName, videoSource = null, imageSource = null, skills = null, rectangleColor = 'grey') => {
         const circleClone = circle.cloneNode(true);
         circleClone.classList.add('clone');
         circles.forEach(c => {
@@ -105,6 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
             imageElement.src = imageSource;
             imageElement.style.display = 'block'; // Show the image
         }
+
+        if(skills) {
+            const greyBox = document.getElementById('grey-rectangle-experience-page');
+            greyBox.style.display = 'block'; 
+            greyBox.style.backgroundColor = rectangleColor;
+        }
     
         // Move the cloned circle to the black strip
         blackStrip.appendChild(circleClone);
@@ -119,11 +125,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     illinoisCircle.addEventListener('click', () => {
-        handleCircleClick(illinoisCircle);
+        handleCircleClick(illinoisCircle, "CS 233 Course Assistant", null, null, true, "rgb(255, 165, 79)");
     });
 
     nuwareCircle.addEventListener('click', () => {
-        handleCircleClick(nuwareCircle);
+        handleCircleClick(nuwareCircle, "Nuware is an IT company.", null, null, true, "rgb(71, 102, 227)"); 
     });
 
     valleyCircle.addEventListener('click', () => {
@@ -135,7 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     awaazCircle.addEventListener('click', () => {
-        handleCircleClick(awaazCircle, "Awaaz", "images/AwaazVideo.mp4");
+        handleCircleClick(awaazCircle, "Illini Awaaz is a South Asian Acapella team at the University of Illinois at Urbana Champaign.", 
+        "images/AwaazVideo.mp4");
     });
 
     closeButton.addEventListener('click', () => {
@@ -151,6 +158,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const imageElement = document.getElementById('black-strip-image');
         if (imageElement) {
             imageElement.style.display = 'none';
+        }
+
+        const greyBox = document.getElementById('grey-rectangle-experience-page');
+        if (greyBox) {
+            greyBox.style.display = 'none';
         }
     
         circles.forEach(circle => {

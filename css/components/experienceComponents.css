@@ -2,6 +2,7 @@
     padding-top: 90px;
     position: absolute;
     background-color: #452c63;
+    min-height: 90vh;
 }
 
 .grid-outline-1 {
@@ -118,39 +119,43 @@
     display: none !important;
 }
 
+.black-strip .experience-name {
+    position: absolute;
+    top: 40px;
+    left: calc(10% + 120px);
+    right: calc(100% - 77% + 270px);
+    font-size: 1.2vw;
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    max-width: calc(77% - 10% - 200px); 
+    z-index: 6; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.black-strip-video {
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
+    display: none;
+    z-index: 5;
+    border: 5px solid #452c63;
+    box-sizing: border-box;
+}
+
 .black-strip .centered {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: blueviolet;
     position: absolute;
-    top: 50%; /* Vertically center within the black strip */
-    left: 10%; /* Horizontally center within the black strip */
-    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    top: 50%;
+    left: 9%;
+    transform: translate(-50%, -50%);
     z-index: 10;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.black-strip .experience-name {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    font-size: 2rem;
-    color: white;
-    font-family: "Fira Sans", sans-serif;
-}
-
-.black-strip-video {
-    position: absolute;
-    top: 50%;
-    left: 77%; 
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: auto;
-    display: none;
-    z-index: 5;
-    border: 5px solid #452c63; 
-    box-sizing: border-box; 
 }
 .black-strip-image {
     position: absolute;
@@ -163,6 +168,18 @@
     z-index: 5; 
     border: 5px solid #452c63; 
     box-sizing: border-box;
+}
+
+.grey-rectangle-experience-page {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 450px;
+    height: 250px; /* Adjust height as needed */
+    background-color: rgb(71, 102, 227);
+    z-index: 5;  /* Ensure it's behind other elements like videos/images */
+    display: none; 
 }
 
 
