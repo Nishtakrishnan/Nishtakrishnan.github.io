@@ -159,9 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
     illinoisCircle.addEventListener('click', () => {
         handleCircleClick(illinoisCircle, 
         "<i><span style='color: #D3D3D3;'>Course Assitant for Computer Architecture - CS 233 (August 2022 - May 2024)</span></i><br/>" + "<br/>" +
-        "CS 233, also known as Computer Architecture, is a course at the University of Illinois that explores the design, organization, and interaction of a computer's components. It covers topics such as digital logic design, data processing, memory management, and performance optimization within computer systems.<br/>"+ "<br/>" +
-        "After taking this course, I became a course assistant for CS 233 because I was truly captivated by how computers work at their core and what happens behind the scenes when we write code. The course opened my eyes to the way computers process instructions and execute machine-level code, which deepened my appreciation for the programming languages we use every day.<br/>"+ "<br/>" +
-        "I believe that the best way to truly master a subject is by teaching it. In this role, I created new material and held office hours to help students fully grasp the fundamental concepts. Being a CA not only sharpened my knowledge of computer architecture but also gave me the rewarding experience of hearing different perspectives and creative solutions from students. It challenged me to refine my own thought process and communicate complex ideas with clarity."
+        "CS 233, also known as Computer Architecture, is a course at the University of Illinois that explores the design and interaction of a computer's components. It covers topics such as digital logic design, data processing, memory management, and performance optimization within computer systems.<br/>"+ "<br/>" +
+        "I became a course assistant for CS 233 because I was interested to learn more in depth about how computers work at their core and what happens behind the scenes when we write code. The course opened my eyes to the way computers process instructions and execute machine-level code, which deepened my appreciation for the programming languages we use every day.<br/>"+ "<br/>" +
+        "I believe that the best way to truly master a subject is by teaching it. In this role, I created new material and held office hours to help students fully grasp the concepts. Being a CA not only sharpened my knowledge of computer architecture but also gave me the rewarding experience of hearing different perspectives and creative solutions from students. It challenged me to refine my own thought process and communicate complex ideas with clarity."
         , null, null, true, "rgb(255, 165, 79)", "CS 233 skills");
     });
 
@@ -182,7 +182,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     valleyCircle.addEventListener('click', () => {
-        handleCircleClick(valleyCircle, "Valley Experience", null, "images/experiencepage/valley-outreach.png");
+        handleCircleClick(valleyCircle, 
+        "<i><span style='color: #D3D3D3;'>Outreach Program Volunteer (June 2019 - March 2020)</span></i><br/>" + "<br/>" +
+        "The Valley School, where I studied, ran an outreach program that supported children from nearby villages with their schoolwork. Students were encouraged to volunteer and assist younger grades with subjects they needed more help in. I volunteered for the program during my last two years of high school, staying after school twice a week to hold math tutoring sessions for younger students.<br/>"+ "<br/>" +
+        "This volunteering experience was truly eye-opening. It taught me that every child has a unique learning style and pace, and that no one is inherently better than the other. I learned how to be patient and adaptable, and along the way, I also deepened my own understanding of math. I still reflect on the questions I was asked and the conversations I had with these students, fascinated by their thought processes.<br/>"+ "<br/>" +  
+        "Through this experience, I was exposed to individuals from different socio-economic backgrounds, which helped me break free from the bubble I had lived in. It made me grateful for the privileges I was born into, but also reinforced the belief that every child has immense potential and deserves access to a quality education. I hope to use my future work and resources to help those in need and make a meaningful impact in their lives.", null, "images/experiencepage/valley-outreach.png");
     });
 
     muCircle.addEventListener('click', () => {
