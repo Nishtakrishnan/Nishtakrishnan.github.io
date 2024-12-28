@@ -40,7 +40,6 @@
     margin-left: 7vw;
 }
 
-
 .additional-text {
     font-size: 1.5rem; 
     color: #969696;
@@ -50,15 +49,14 @@
     margin-bottom: 250px;
 }
 
-  
-  :root {
+:root {
     --color-background: #000119;
     --stroke-width: calc(1em / 16);
     --font-size: 5vw;
     --font-weight: 700;
-  }
+}
 
-  .stroke-text {
+.stroke-text {
     margin-top: 20px;
     background-clip: text;
     background-image: linear-gradient(to right, #b58db6, #d0c1f2);
@@ -104,6 +102,7 @@
     border-radius: 10px; 
     max-height: 80%; 
 }
+
 .github-button {
     position: absolute;
     left: 70px; 
@@ -122,7 +121,7 @@
 }
 
 .github-button:hover {
-    background-color: #b58db6; /* Slightly darker purple on hover */
+    background-color: #b58db6; 
 }
 
 .github-button-traveling-salesman {
@@ -137,14 +136,14 @@
     font-size: 1vw; 
     cursor: pointer;
     overflow: hidden; 
-    margin-top: 9vw;
+    margin-top: 8.5vw;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
 
 .github-button-traveling-salesman:hover {
-    background-color: #b58db6; /* Darker purple on hover */
+    background-color: #b58db6; 
 }
 
 .project-description {
@@ -158,45 +157,67 @@
     line-height: 1.5;    
 }
 
+.project-description-traveling {
+    margin-top: 1vw; 
+    text-align: left; 
+    margin-left: 5vw;
+    margin-right: 1vw;
+    font-weight: normal; 
+    font-size: 18px; 
+    color:rgb(154, 154, 154);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;    
+}
+
 .tech-stack {
     margin-top: 0px; 
     text-align: left; 
     margin-left: 1vw;
     font-weight: normal; 
     font-size: 18px; 
-    color:rgb(1, 1, 1);
+    color:rgb(243, 239, 239);
     font-family: 'Roboto', sans-serif;
-    line-height: 1.5;    
+    line-height: 1.5; 
 }
 
 .content-container {
     position: absolute; 
     bottom: 30px; 
     left: 30px;
-    display: flex; /* Aligns items horizontally */
-    align-items: center; /* Aligns items vertically in the container */
+    display: flex;
+    align-items: center;
 }
 
 .grey-rectangle {
-    background-color: rgba(204, 204, 204, 0.3); /* Grey color for the rectangle */
-    width: 40%; /* Adjust the width as needed */
-    height: 150px;
-    padding: 20px; /* Adds some padding inside the rectangle */
-    margin-left: 3vw; /* Space between the video and rectangle */
-    border-radius: 10px; /* Optional: round the rectangle corners */
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
-    line-height: 1.5; /* Increase line spacing */
-    color:beige;
+    background-color: rgba(204, 204, 204, 0.3); 
+    width: 40%; 
+    height: 175px;
+    padding: 2px 20px 20px 20px; 
+    margin-left: 3vw; 
+    border-radius: 10px; 
+    font-family: 'Roboto', sans-serif;
+    line-height: 1; 
+    color: beige;
 }
 
 ul.custom-bullets {
-    list-style-type: disc; /* Style of the bullet points */
-    padding-left: 20px; /* Space between bullet and text */
-    margin: 0; /* Remove default margin */
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin: 0; 
 }
 
-/* Optional: Adjust the font size and line spacing */
 ul.custom-bullets li {
     font-size: 0.9rem;
     line-height: 1.5;
+}
+
+.tsp-meme {
+    width: 100%;  
+    max-width: 210px;  
+    height: auto;  
+    object-fit: contain;  
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }

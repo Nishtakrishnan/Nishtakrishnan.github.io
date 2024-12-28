@@ -17,11 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 function showNextSlide() {
     const currentSlide = document.querySelector('.stroke-text').innerText;
     const video = document.querySelector('.placeranker-video');
     const githubButton = document.querySelector('.github-button');
+    const description = document.querySelector('.project-description-traveling')
+    const meme = document.querySelector('.tsp-meme')
     
     if (currentSlide === 'Placeranker') {
         document.querySelector('.stroke-text').innerText = 'Traveling Salesman';
@@ -35,6 +36,9 @@ function showNextSlide() {
         githubButton.classList.add('github-button-traveling-salesman');
         githubButton.href = 'https://github.com/Nishtakrishnan/TravelingSalesman';
         githubButton.style.display = 'block';
+        description.innerText = "This project addresses the NP-hard Traveling Salesman Problem (TSP), which seeks the shortest route to visit a set of cities and return to the origin. My solution implements key algorithms, including Christofides' Algorithm, Kruskal's algorithm, and Eulerian paths, which traverse every edge of a minimum spanning tree exactly once. Using the OpenFlights dataset and C++, the project successfully finds the shortest path through a set of desired cities from around the world.";
+        description.style.display = 'block'; // Ensure it's visible
+        meme.style.display = 'block'
     }
 }
 
@@ -42,8 +46,12 @@ function showPreviousSlide() {
     const currentSlide = document.querySelector('.stroke-text').innerText;
     const video = document.querySelector('.placeranker-video');
     const githubButton = document.querySelector('.github-button-traveling-salesman');
+    const description = document.querySelector('.project-description-traveling')
+    const meme = document.querySelector('.tsp-meme')
     
     if (currentSlide === 'Traveling Salesman') {
+        description.style.display = 'none';
+        meme.style.display = 'none'
         document.querySelector('.stroke-text').innerText = 'Placeranker';
         document.querySelector('.left-arrow').style.display = 'none';
         document.querySelector('.right-arrow').style.display = 'block';
@@ -57,5 +65,3 @@ function showPreviousSlide() {
         githubButton.style.display = 'block';
     }
 }
-
-

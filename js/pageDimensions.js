@@ -4,8 +4,8 @@ function updateDimensionsPages() {
         var projectsSection = document.getElementById("projects");
         var contactSection = document.getElementById("contact");
         var footerSection = document.getElementById("footer");
-        experienceSection.style.top = (aboutSection.offsetTop + aboutSection.offsetHeight) + "px";
-        projectsSection.style.top = (experienceSection.offsetTop + experienceSection.offsetHeight) + "px";
+        experienceSection.style.top = (aboutSection.offsetTop + aboutSection.offsetHeight - 5) + "px";
+        projectsSection.style.top = (experienceSection.offsetTop + experienceSection.offsetHeight-5) + "px";
         contactSection.style.top = (projectsSection.offsetTop + projectsSection.offsetHeight) + "px";
         footerSection.style.top = (contactSection.offsetTop + contactSection.offsetHeight) + "px";
     }

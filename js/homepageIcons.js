@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Start typing animation
         setTimeout(() => {
-            typeEffect(introDriven, 'Driven by ', 100);
+            typeEffect(introDriven, 'Nishta Krishnan ', 100);
             setTimeout(() => {
                 typeEffect(introTech, 'Technology', 100);
                 setTimeout(() => {

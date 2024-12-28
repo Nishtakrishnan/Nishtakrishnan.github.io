@@ -124,7 +124,7 @@
 
 .timeline-title {
   margin: 0;
-  font-size: 1.15em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -138,14 +138,15 @@
 }
 
 .timeline-image {
-  width: 70%;
+  width: 8vw; /* Icon size */
   height: auto;
-  margin-right: 0.5em;
+  margin-right: 1px; /* Space between the icon and text */
 }
 
 .timeline-title-container {
   display: flex;
   align-items: center;
+  justify-content: center; /* Center-align the university name and icon */
 }
 
 .timeline-more-content {
@@ -171,4 +172,31 @@
     margin: 10px auto; /* Center the image horizontally and add vertical space */
     display: block; /* Ensure the margin auto works for centering */
     border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.timeline-title-container {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+.timeline-image {
+  width: 8vw; /* Icon size */
+  height: auto;
+  margin-right: 10px; /* Space between the icon and text */
+}
+
+.university-name {
+  margin-top: 20px;
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.degree-title {
+  margin-top: 5px; /* Reduce space between university name and degree title */
+  font-size: 0.9em; /* Slightly larger font for better readability */
+  text-align: center; /* Center the degree title */
+  font-weight: normal;
+  margin-bottom: 30px
 }

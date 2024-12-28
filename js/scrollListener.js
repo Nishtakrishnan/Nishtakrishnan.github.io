@@ -150,9 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "This role has not only enhanced my technical skills in coding and analytics but also sharpened my communication and project management abilities. Each project presents unique challenges, allowing continuous learning and exposing me to a range of industries, including technology and finance. It has also strengthened my ability to handle stress, as the nature of forensic data analysis requires meeting tight deadlines and responding quickly to the demands of litigation.",        null,
         null,
         true,
-        "rgba(71, 102, 227, 0.2)", // Color for the Nuware experience
+        "rgba(50, 100, 255, 0.5)", // Color for the Nuware experience
         "Biggest Takeaways", // Text for the grey box
-        ["Technical Skills: Power BI, Python, SQL", "Data is powerful!"]
+        ["Technical Skills: Python, SQL, Databricks, Tableau, Excel", "Collaboration and communication"]
         );
     });
 
@@ -162,7 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "CS 233, also known as Computer Architecture, is a course at the University of Illinois that explores the design and interaction of a computer's components. It covers topics such as digital logic design, data processing, memory management, and performance optimization within computer systems.<br/>"+ "<br/>" +
         "I became a course assistant for CS 233 because I was interested to learn more in depth about how computers work at their core and what happens behind the scenes when we write code. The course opened my eyes to the way computers process instructions and execute machine-level code, which deepened my appreciation for the programming languages we use every day.<br/>"+ "<br/>" +
         "I believe that the best way to truly master a subject is by teaching it. In this role, I created new material and held office hours to help students fully grasp the concepts. Being a CA not only sharpened my knowledge of computer architecture but also gave me the rewarding experience of hearing different perspectives and creative solutions from students. It challenged me to refine my own thought process and communicate complex ideas with clarity."
-        , null, null, true, "rgb(255, 165, 79)", "CS 233 skills");
+        , null, null, true, "rgb(255, 165, 79)", "Biggest Takeaways",
+        ["Technical Skills: MIPS, Verilog"]);
     });
 
     nuwareCircle.addEventListener('click', () => {
@@ -177,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             true,
             "rgba(71, 102, 227, 0.2)", // Color for the Nuware experience
             "Biggest Takeaways", // Text for the grey box
-            ["Technical Skills: Power BI, Python, SQL", "Data is powerful!"]
+            ["Technical Skills: Power BI, Python, SQL", "Realized the impact and potential of using data."]
         );
     });
     
@@ -200,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
             true,
             "rgba(270, 200, 200, 0.8)",
             "Biggest Takeaways",
-            ["Technical Skills: Scala, Kafka", "Improved knowledge about Trading", "Leaving commenting code for later is a bad decision."]
+            ["Technical Skills: Scala, Kafka", "Improved knowledge about Trading", "Learned that leaving code uncommented is just setting up for future choas!"]
             );
     });
 
