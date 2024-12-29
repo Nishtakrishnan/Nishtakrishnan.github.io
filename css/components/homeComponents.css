@@ -21,19 +21,19 @@
 }
 
 .mail-icon img {
-    margin-top: 20px;
+    margin-top: 3vh;
     left: 80px;
     width: 50px;
 }
 
 .github-icon img {
-    margin-top: 20px;
+    margin-top: 3vh;
     left: 180px;
     width: 50px;
 }
 
 .linkedin-icon img {
-    margin-top: 20px;
+    margin-top: 3vh;
     left: 280px;
     width: 50px;
 }
@@ -77,7 +77,7 @@
     color: rgba(0, 0, 0, 0.7);
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
-    margin-top: 10px;
+    margin-top: 3vh;
     max-width: 600px;
 }
 
