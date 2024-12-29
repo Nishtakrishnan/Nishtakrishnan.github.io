@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         leftText2.classList.remove('visible'); // Ensure .left-text-2 is hidden initially
 
         // Start typing animation with "Hello," and "Welcome to my Website!"
-        const lines = ['Hello,', 'Welcome to my Website!'];
+        const lines = ['Hello,', 'Welcome to my website!'];
         let currentLine = 0;
 
         function typeNextLine() {
