@@ -12,9 +12,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const timelineMoreContent = this.parentElement;
             timelineMoreContent.style.display = 'none';
             timelineMoreContent.previousElementSibling.style.display = 'block';
+
+            // Scroll to the .education-title element, 10px above
+            const element = document.querySelector(".education-title");
+            if (element) {
+                const rect = element.getBoundingClientRect();
+                const scrollPosition = window.pageYOffset + rect.top - 50; // 10px offset above the element
+                window.scrollTo({
+                    top: scrollPosition,
+                });
+            } else {
+                console.log("Element with class 'education-title' not found.");
+            }
         });
     });
 });
+
+
 
 
 function showNextSlide() {
@@ -36,7 +50,7 @@ function showNextSlide() {
         githubButton.classList.add('github-button-traveling-salesman');
         githubButton.href = 'https://github.com/Nishtakrishnan/TravelingSalesman';
         githubButton.style.display = 'block';
-        description.innerText = "This project addresses the NP-hard Traveling Salesman Problem (TSP), which seeks the shortest route to visit a set of cities and return to the origin. My solution implements key algorithms, including Christofides' Algorithm, Kruskal's algorithm, and Eulerian paths, which traverse every edge of a minimum spanning tree exactly once. Using the OpenFlights dataset and C++, the project successfully finds the shortest path through a set of desired cities from around the world.";
+        description.innerText = "This project addresses the NP-hard Traveling Salesman Problem (TSP), which seeks the shortest route to visit a set of cities and return to the origin. My solution implements key algorithms, including Christofides' Algorithm, Kruskal's algorithm, and Eulerian paths, which traverse every edge of a minimum spanning tree exactly once. Using the OpenFlights dataset and C++, the project successfully finds the shortest path through a set of desired cities in optimized time.";
         description.style.display = 'block'; // Ensure it's visible
         meme.style.display = 'block'
     }

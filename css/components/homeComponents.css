@@ -21,19 +21,19 @@
 }
 
 .mail-icon img {
-    margin-top: 30px;
+    margin-top: 20px;
     left: 80px;
     width: 50px;
 }
 
 .github-icon img {
-    margin-top: 30px;
+    margin-top: 20px;
     left: 180px;
     width: 50px;
 }
 
 .linkedin-icon img {
-    margin-top: 30px;
+    margin-top: 20px;
     left: 280px;
     width: 50px;
 }
@@ -57,12 +57,12 @@
     white-space: nowrap;
 }
 
-#intro-tech, #intro-curiosity {
+/* Updated style for typing animation */
+#welcome-text {
     background: -webkit-linear-gradient(#76b1d7, #6f307c); /* Gradient from purple to blue */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .left-text-2 {
     opacity: 0; 

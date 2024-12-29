@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const introDriven = document.getElementById('intro-driven');
-    const introTech = document.getElementById('intro-tech');
-    const introFueled = document.getElementById('intro-fueled');
-    const introCuriosity = document.getElementById('intro-curiosity');
+    const welcomeText = document.getElementById('welcome-text');
     const leftText2 = document.querySelector('.left-text-2');
     const icons = document.querySelectorAll('.icon a');
 
@@ -11,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let index = 0;
         function type() {
             if (index < text.length) {
-                element.textContent += text.charAt(index);
+                element.innerHTML += text.charAt(index); // Use innerHTML to handle HTML tags like <br>
                 index++;
                 setTimeout(type, delay);
             }
@@ -21,41 +18,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function startTypingAnimation() {
         // Reset text content and visibility
-        introDriven.textContent = '';
-        introTech.textContent = '';
-        introFueled.textContent = '';
-        introCuriosity.textContent = '';
+        welcomeText.innerHTML = ''; // Reset welcome text content
         document.querySelector('.intro-text').style.visibility = 'visible';
         leftText2.classList.remove('visible'); // Ensure .left-text-2 is hidden initially
 
-        // Start typing animation
-        setTimeout(() => {
-            typeEffect(introDriven, 'Nishta Krishnan ', 100);
-            setTimeout(() => {
-                typeEffect(introTech, 'Technology', 100);
-                setTimeout(() => {
-                    typeEffect(introFueled, 'Fueled by ', 100);
-                    setTimeout(() => {
-                        typeEffect(introCuriosity, 'Curiosity', 100);
-                        // Show .left-text-2 after the intro text is done
-                        setTimeout(() => {
-                            leftText2.classList.add('visible');
+        // Start typing animation with "Hello," and "Welcome to my Website!"
+        const lines = ['Hello,', 'Welcome to my Website!'];
+        let currentLine = 0;
 
-                            // Show icons one by one
-                            icons.forEach((icon, index) => {
-                                setTimeout(() => {
-                                    icon.classList.add('visible');
-                                }, index * 500); 
-                            });
-                        }, 'Curiosity'.length * 100 + 500); 
-                    }, 'Fueled by '.length * 100);
-                }, 'Technology'.length * 100 + 500);
-            }, 'Driven by '.length * 100);
-        }, 11000); 
+        function typeNextLine() {
+            if (currentLine < lines.length) {
+                typeEffect(welcomeText, lines[currentLine], 100);
+                currentLine++;
+                // Add a line break after the first line before typing the next one
+                if (currentLine === 1) {
+                    setTimeout(() => {
+                        welcomeText.innerHTML += '<br/>'; // Add line break after the first line
+                        typeNextLine(); // Start typing the second line
+                    }, lines[currentLine - 1].length * 100 + 500);
+                } else {
+                    setTimeout(typeNextLine, lines[currentLine - 1].length * 100 + 500); // Add delay between lines
+                }
+            } else {
+                // Show .left-text-2 after typing animation is done
+                setTimeout(() => {
+                    leftText2.classList.add('visible');
+
+                    // Show icons one by one
+                    icons.forEach((icon, index) => {
+                        setTimeout(() => {
+                            icon.classList.add('visible');
+                        }, index * 500);
+                    });
+                }, 500);
+            }
+        }
+
+        // Add a 10-second delay before starting the typing animation
+        setTimeout(() => {
+            typeNextLine(); // Start typing the first line
+        }, 10000);  // 10000ms = 10 seconds
     }
 
     startTypingAnimation();
 });
+
 
 
 function updateStylesForPhone() {
