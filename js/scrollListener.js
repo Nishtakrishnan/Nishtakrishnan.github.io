@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
         true,
         "rgba(50, 100, 255, 0.5)", // Color for the Nuware experience
         "Biggest Takeaways", // Text for the grey box
-        ["Technical Skills: Python, SQL, Databricks, Tableau, Excel", "Collaboration and communication"]
+        ["Technical Skills: Python, SQL, Databricks, Tableau, Excel"]
         );
     });
 
