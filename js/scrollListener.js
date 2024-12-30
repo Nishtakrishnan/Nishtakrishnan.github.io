@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
         true,
         "rgba(50, 100, 255, 0.5)", // Color for the Nuware experience
         "Biggest Takeaways", // Text for the grey box
-        ["Technical Skills: Python, SQL, Databricks, Tableau, Excel"]
+        ["Technical Skills: Python, SQL, Databricks, Tableau, Excel", "Enhanced expertise in ETL processes", "Improved communication by explaining complex findings to diverse and varied audiences"]
         );
     });
 
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "I became a course assistant for CS 233 because I was interested to learn more in depth about how computers work at their core and what happens behind the scenes when we write code. The course opened my eyes to the way computers process instructions and execute machine-level code, which deepened my appreciation for the programming languages we use every day.<br/>"+ "<br/>" +
         "I believe that the best way to truly master a subject is by teaching it. In this role, I created new material and held office hours to help students fully grasp the concepts. Being a CA not only sharpened my knowledge of computer architecture but also gave me the rewarding experience of hearing different perspectives and creative solutions from students. It challenged me to refine my own thought process and communicate complex ideas with clarity."
         , null, null, true, "rgb(255, 165, 79)", "Biggest Takeaways",
-        ["Technical Skills: MIPS, Verilog"]);
+        ["Technical Skills: MIPS, Verilog", "Realized there's always something to learn from others, as each student brought a unique perspective or new insight"]);
     });
 
     nuwareCircle.addEventListener('click', () => {
